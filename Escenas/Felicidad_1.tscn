@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://d0g5penjjs6cx" path="res://Sprites/Estrella (Ítem).png" id="5_pi3cd"]
 [ext_resource type="PackedScene" path="res://Escenas/items/StarItem.tscn" id="10_star"]
 [ext_resource type="Texture2D" uid="uid://fpdxq5l54ubv" path="res://Sprites/Cercas blancas grandes.png" id="4_0j1xo"]
-[ext_resource type="PackedScene" uid="uid://bqnywpvwbqhdb" path="res://Escenas/Enemigo_1.tscn" id="6_ts5so"]
 [ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/zona_de_muerte.tscn" id="7_0j1xo"]
 [ext_resource type="PackedScene" uid="uid://hvy4wmhg2xjx" path="res://Escenas/enemigo_hongo.tscn" id="7_5n40s"]
 [ext_resource type="AudioStream" uid="uid://dji5k7qgjvx8p" path="res://Musica y sonidos/Musica nivel alegria.mp3" id="8_a6qbv"]
@@ -133,7 +132,7 @@ z_index = -1
 tile_map_data = PackedByteArray("AAD3//v/AQAAAAEAAAD///v/AQAAAAEAAAAJAPv/AQAAAAEAAAAVAPv/AQAAAAEAAAAhAPv/AQAAAAEAAAAtAPv/AQAAAAEAAADr//v/AQAAAAEAAAA5APv/AQAAAAEAAABFAPv/AQAAAAEAAABRAPv/AQAAAAEAAABZAPv/AQAAAAEAAABlAPv/AQAAAAEAAABxAPv/AQAAAAEAAAB9APv/AQAAAAEAAACJAPv/AQAAAAEAAACVAPv/AQAAAAEAAAChAPv/AQAAAAEAAACtAPv/AQAAAAEAAACxAPv/AQAAAAEAAAA=")
 tile_set = SubResource("TileSet_yevxh")
 
-[node name="Enemigo_1" parent="." unique_id=2093923953 instance=ExtResource("6_ts5so")]
+[node name="EnemigoHongo6" parent="." instance=ExtResource("7_5n40s")]
 position = Vector2(679, -47)
 
 [node name="Zona de muerte" parent="." unique_id=302706175 instance=ExtResource("7_0j1xo")]

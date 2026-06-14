@@ -15,10 +15,12 @@ func _process(delta: float) -> void:
 		var colision = ray_cast_2_derecha.get_collider()
 		if colision and colision.is_in_group("Personaje"):
 			get_tree().reload_current_scene()
+			return
 		direccion = -1
 	if ray_cast_2_izquierda.is_colliding():
 		var colision = ray_cast_2_izquierda.get_collider()
 		if colision and colision.is_in_group("Personaje"):
 			get_tree().reload_current_scene()
+			return
 		direccion = 1
 	position.x += direccion * speed * delta
