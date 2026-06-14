@@ -1,9 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://c4spc2dlnuk5q"]
+[gd_scene format=3 uid="uid://c4spc2dlnuk5q"]
 
-[ext_resource type="Script" uid="uid://bykvd5t5vpsdt" path="res://Script/personaje.gd" id="1_0kjke"]
-[ext_resource type="Texture2D" uid="uid://ccqk28hexupor" path="res://Pixeart/Jugador Pred. Niño Caminar (1).png" id="2_tk1jt"]
-[ext_resource type="Texture2D" uid="uid://ppnnst68qkdg" path="res://Pixeart/Perosnaje Principal Quieto  D.png" id="3_tk1jt"]
-[ext_resource type="Texture2D" uid="uid://c05qcfo6nyrm7" path="res://Pixeart/Personaje Principal cayendo.png" id="4_tk1jt"]
+[ext_resource type="Script" uid="uid://bykvd5t5vpsdt" path="res://Scripts/personaje.gd" id="1_0kjke"]
+[ext_resource type="Texture2D" uid="uid://ccqk28hexupor" path="res://Sprites/Jugador Pred. Niño Caminar (1).png" id="2_tk1jt"]
+[ext_resource type="Texture2D" uid="uid://ppnnst68qkdg" path="res://Sprites/Perosnaje Principal Quieto  D.png" id="3_tk1jt"]
+[ext_resource type="Texture2D" uid="uid://c05qcfo6nyrm7" path="res://Sprites/Personaje Principal cayendo.png" id="4_tk1jt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0kjke"]
 atlas = ExtResource("2_tk1jt")
@@ -76,16 +76,15 @@ animations = [{
 radius = 12.0
 height = 46.0
 
-[node name="Personaje" type="CharacterBody2D" groups=["Personaje"]]
+[node name="Personaje" type="CharacterBody2D" unique_id=1118636508 groups=["Personaje"]]
 script = ExtResource("1_0kjke")
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=899285877]
 position = Vector2(-16, -69)
 scale = Vector2(0.941176, 0.779661)
 sprite_frames = SubResource("SpriteFrames_ndubs")
-animation = &"saltar"
-frame_progress = 0.786637
+animation = &"caminar"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=184571173]
 position = Vector2(-16, -69)
 shape = SubResource("CapsuleShape2D_tk1jt")

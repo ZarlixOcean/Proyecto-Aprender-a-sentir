@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://hvy4wmhg2xjx"]
+[gd_scene format=3 uid="uid://hvy4wmhg2xjx"]
 
-[ext_resource type="Script" uid="uid://bx2kwiwi7hmtt" path="res://Script/enemigo_hongo.gd" id="1_d3f3q"]
-[ext_resource type="Texture2D" uid="uid://csw04656stcn6" path="res://Pixeart/Hongo AnimaciÃ³n Caminar.png" id="1_hsby8"]
+[ext_resource type="Script" uid="uid://bx2kwiwi7hmtt" path="res://Scripts/enemigo_hongo.gd" id="1_d3f3q"]
+[ext_resource type="Texture2D" uid="uid://csw04656stcn6" path="res://Sprites/Hongo AnimaciÃ³n Caminar.png" id="1_hsby8"]
 [ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/zona_de_muerte.tscn" id="2_d3f3q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xv3b0"]
@@ -29,23 +29,23 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mvfyi"]
 size = Vector2(16, 20)
 
-[node name="EnemigoHongo" type="Node2D"]
+[node name="EnemigoHongo" type="Node2D" unique_id=1870158058]
 script = ExtResource("1_d3f3q")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=292185436]
 sprite_frames = SubResource("SpriteFrames_fru18")
 autoplay = "default"
 frame_progress = 0.939631
 
-[node name="Zona de muerte" parent="." instance=ExtResource("2_d3f3q")]
+[node name="Zona de muerte" parent="." unique_id=1672874139 instance=ExtResource("2_d3f3q")]
 position = Vector2(-26, -13)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Zona de muerte"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zona de muerte" unique_id=1533490198]
 position = Vector2(26, 15)
 shape = SubResource("RectangleShape2D_mvfyi")
 
-[node name="RayCast2Derecha" type="RayCast2D" parent="."]
+[node name="RayCast2Derecha" type="RayCast2D" parent="." unique_id=158125779]
 target_position = Vector2(14, 0)
 
-[node name="RayCast2Izquierda" type="RayCast2D" parent="."]
+[node name="RayCast2Izquierda" type="RayCast2D" parent="." unique_id=157453471]
 target_position = Vector2(-15, 0)
