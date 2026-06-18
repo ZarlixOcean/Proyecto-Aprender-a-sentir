@@ -1,0 +1,62 @@
+[gd_scene format=4 uid="uid://b3dauubhgile8"]
+
+[ext_resource type="Texture2D" uid="uid://drnh3t3dng2al" path="res://Sprites/Suelo - tristeza.png" id="1_1dshx"]
+[ext_resource type="Texture2D" uid="uid://jrwkht3ajv4u" path="res://Sprites/Suelo.png" id="2_1fn6b"]
+[ext_resource type="PackedScene" uid="uid://c4spc2dlnuk5q" path="res://Escenas/Personaje.tscn" id="2_verny"]
+[ext_resource type="Texture2D" uid="uid://c0jdtcrm7ocp2" path="res://Sprites/Escenario completo.png" id="4_twyb5"]
+[ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/zona_de_muerte.tscn" id="5_twyb5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1fn6b"]
+texture = ExtResource("1_1dshx")
+texture_region_size = Vector2i(20, 20)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9.712372, -9.892229, 10.072088, -9.892229, 9.892231, 10.251947, -9.712372, 10.07209)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x5dvj"]
+texture = ExtResource("2_1fn6b")
+texture_region_size = Vector2i(20, 20)
+5:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_twyb5"]
+tile_size = Vector2i(20, 20)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_1fn6b")
+sources/1 = SubResource("TileSetAtlasSource_x5dvj")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5dvj"]
+size = Vector2(2773.5, 25)
+
+[node name="Node2D" type="Node2D" unique_id=224384493]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=779082369]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAADh/wAAAAAAAAAAAADi/wAAAAAAAAAAAADj/wAAAAAAAAAAAADk/wAAAAAAAAAAAADl/wAAAAAAAAAAAADm/wAAAAAAAAAAAADn/wAAAAAAAAAAAADo/wAAAAAAAAAAAADp/wAAAAAAAAAAAADq/wAAAAAAAAAAAADr/wAAAAAAAAAAAADs/wAAAAAAAAAAAADt/wAAAAAAAAAAAADu/wAAAAAAAAAAAADv/wAAAAAAAAAAAADw/wAAAAAAAAAAAADx/wAAAAAAAAAAAADy/wAAAAAAAAAAAADz/wAAAAAAAAAAAAD0/wAAAAAAAAAAAAD1/wAAAAAAAAAAAAD2/wAAAAAAAAAAAAD3/wAAAAAAAAAAAAD4/wAAAAAAAAAAAAD5/wAAAAAAAAAAAAD6/wAAAAAAAAAAAAD7/wAAAAAAAAAAAAD8/wAAAAAAAAAAAAD9/wAAAAAAAAAAAAD+/wAAAAAAAAAAAAD//wAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAALAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAARAAAAAAAAAAAAAAASAAAAAAAAAAAAAAATAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAVAAAAAAAAAAAAAAAWAAAAAAAAAAAAAAAXAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAbAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAdAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAfAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAjAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAlAAAAAAAAAAAAAAAmAAAAAAAAAAAAAAAnAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAApAAAAAAAAAAAAAAAqAAAAAAAAAAAAAAArAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAAtAAAAAAAAAAAAAAAuAAAAAAAAAAAAAAAvAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAHAP//AAAAAAAAAADu//f/AAAAAAAAAADv//f/AAAAAAAAAADw//f/AAAAAAAAAADx//f/AAAAAAAAAADy//f/AAAAAAAAAADz//f/AAAAAAAAAAD0//f/AAAAAAAAAAD1//f/AAAAAAAAAAD2//f/AAAAAAAAAAD3//f/AAAAAAAAAAAeAP//AAAAAAAAAAD6//z/AAAAAAAAAAD7//z/AAAAAAAAAAD8//z/AAAAAAAAAAD9//z/AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_twyb5")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="TileMapLayer" unique_id=1850787204]
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="TileMapLayer" unique_id=1546575468]
+
+[node name="Personaje" parent="." unique_id=1118636508 instance=ExtResource("2_verny")]
+position = Vector2(-324, 26)
+
+[node name="Camera2D" type="Camera2D" parent="Personaje" unique_id=784293449]
+position = Vector2(0, -109.00001)
+scale = Vector2(0.99999994, 0.99999994)
+zoom = Vector2(2, 2)
+limit_left = -500
+limit_top = -500
+limit_right = 2916
+limit_bottom = 500
+
+[node name="Zona de muerte" parent="." unique_id=1149468401 instance=ExtResource("5_twyb5")]
+position = Vector2(-324, 223)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zona de muerte" unique_id=1515796463]
+position = Vector2(1196, -142)
+shape = SubResource("RectangleShape2D_x5dvj")
+
+[node name="fondo de tristeza" type="Sprite2D" parent="." unique_id=1998463683]
+visible = false
+position = Vector2(-213.00002, -125)
+scale = Vector2(1.79375, 1.8555555)
+texture = ExtResource("4_twyb5")
