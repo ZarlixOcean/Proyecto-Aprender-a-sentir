@@ -77,6 +77,7 @@ radius = 12.0
 height = 46.0
 
 [node name="Personaje" type="CharacterBody2D" unique_id=1118636508 groups=["Personaje"]]
+z_index = 5
 script = ExtResource("1_0kjke")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=899285877]
