@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b6w8uroakkg0d"]
 
-[ext_resource type="Script" uid="uid://du2a4nry6t80r" path="res://Script/zona_de_muerte.gd" id="1_23qn7"]
+[ext_resource type="Script" uid="uid://du2a4nry6t80r" path="res://Scripts/zona_de_muerte.gd" id="1_23qn7"]
 
 [node name="Zona de muerte" type="Area2D"]
 script = ExtResource("1_23qn7")

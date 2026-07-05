@@ -1,16 +1,16 @@
-[gd_scene format=3 uid="uid://d034k24ciktpd"]
+[gd_scene load_steps=3 format=3 uid="uid://d034k24ciktpd"]
 
 [ext_resource type="Texture2D" uid="uid://elxg22y35sjv" path="res://Sprites/tierra plataforma pequeña.png" id="1_dogeh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bmha8"]
 size = Vector2(20, 11)
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" unique_id=1994916199]
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1375651337]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_dogeh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1008686515]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4.5)
 shape = SubResource("RectangleShape2D_bmha8")
 one_way_collision = true

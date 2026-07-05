@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=4 format=3 uid="uid://bbc5dfoggf633"]
 
-[ext_resource type="Script" path="res://Scripts/Items/FinalItem.gd" id="1_final"]
-[ext_resource type="Texture2D" path="res://Sprites/Corazón del final (ítem importante).png" id="2_corazon"]
+[ext_resource type="Script" uid="uid://xaupiyprois1" path="res://Scripts/Items/FinalItem.gd" id="1_final"]
+[ext_resource type="Texture2D" uid="uid://b7e3c6dxc3vwd" path="res://Sprites/Corazón del final (ítem importante).png" id="2_corazon"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_final"]
 radius = 25.0

@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://b3dauubhgile8"]
+[gd_scene load_steps=14 format=4 uid="uid://b3dauubhgile8"]
 
 [ext_resource type="Texture2D" uid="uid://drnh3t3dng2al" path="res://Sprites/Suelo - tristeza.png" id="1_1dshx"]
 [ext_resource type="Texture2D" uid="uid://jrwkht3ajv4u" path="res://Sprites/Suelo.png" id="2_1fn6b"]
@@ -12,7 +12,7 @@
 texture = ExtResource("1_1dshx")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9.712372, -9.892229, 10.072088, -9.892229, 9.892231, 10.251947, -9.712372, 10.07209)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9.71237, -9.89223, 10.0721, -9.89223, 9.89223, 10.2519, -9.71237, 10.0721)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x5dvj"]
 texture = ExtResource("2_1fn6b")
@@ -28,85 +28,57 @@ sources/1 = SubResource("TileSetAtlasSource_x5dvj")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x5dvj"]
 size = Vector2(2773.5, 25)
 
-[sub_resource type="Animation" id="Animation_x5dvj"]
-resource_name = "Movimiento"
-length = 2.5
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(88, -47), Vector2(88, -170)]
-}
-
 [sub_resource type="Animation" id="Animation_15pll"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(88, -47)]
-}
+resource_name = "movimiento"
+loop_mode = 2
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ig15d"]
 _data = {
-&"Movimiento": SubResource("Animation_x5dvj"),
-&"RESET": SubResource("Animation_15pll")
+&"movimiento": SubResource("Animation_15pll")
 }
 
-[node name="Node2D" type="Node2D" unique_id=224384493]
+[node name="Node2D" type="Node2D"]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=779082369]
-tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAADh/wAAAAAAAAAAAADi/wAAAAAAAAAAAADj/wAAAAAAAAAAAADk/wAAAAAAAAAAAADl/wAAAAAAAAAAAADm/wAAAAAAAAAAAADn/wAAAAAAAAAAAADo/wAAAAAAAAAAAADp/wAAAAAAAAAAAADq/wAAAAAAAAAAAADr/wAAAAAAAAAAAADs/wAAAAAAAAAAAADt/wAAAAAAAAAAAADu/wAAAAAAAAAAAADv/wAAAAAAAAAAAADw/wAAAAAAAAAAAADx/wAAAAAAAAAAAADy/wAAAAAAAAAAAADz/wAAAAAAAAAAAAD0/wAAAAAAAAAAAAD1/wAAAAAAAAAAAAD2/wAAAAAAAAAAAAD3/wAAAAAAAAAAAAD4/wAAAAAAAAAAAAD5/wAAAAAAAAAAAAD6/wAAAAAAAAAAAAD7/wAAAAAAAAAAAAD8/wAAAAAAAAAAAAD9/wAAAAAAAAAAAAD+/wAAAAAAAAAAAAD//wAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAALAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAARAAAAAAAAAAAAAAASAAAAAAAAAAAAAAATAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAVAAAAAAAAAAAAAAAWAAAAAAAAAAAAAAAXAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAbAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAdAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAfAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAjAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAlAAAAAAAAAAAAAAAmAAAAAAAAAAAAAAAnAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAApAAAAAAAAAAAAAAAqAAAAAAAAAAAAAAArAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAAtAAAAAAAAAAAAAAAuAAAAAAAAAAAAAAAvAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAHAP//AAAAAAAAAADu//f/AAAAAAAAAADv//f/AAAAAAAAAADw//f/AAAAAAAAAADx//f/AAAAAAAAAADy//f/AAAAAAAAAADz//f/AAAAAAAAAAD0//f/AAAAAAAAAAD1//f/AAAAAAAAAAD2//f/AAAAAAAAAAD3//f/AAAAAAAAAAAeAP//AAAAAAAAAAD9//f/AAAAAAAAAAD+//f/AAAAAAAAAAD///f/AAAAAAAAAAAAAPf/AAAAAAAAAAA=")
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAADh/wAAAAAAAAAAAADi/wAAAAAAAAAAAADj/wAAAAAAAAAAAADk/wAAAAAAAAAAAADl/wAAAAAAAAAAAADm/wAAAAAAAAAAAADn/wAAAAAAAAAAAADo/wAAAAAAAAAAAADp/wAAAAAAAAAAAADq/wAAAAAAAAAAAADr/wAAAAAAAAAAAADs/wAAAAAAAAAAAADt/wAAAAAAAAAAAADu/wAAAAAAAAAAAADv/wAAAAAAAAAAAADw/wAAAAAAAAAAAADx/wAAAAAAAAAAAADy/wAAAAAAAAAAAADz/wAAAAAAAAAAAAD0/wAAAAAAAAAAAAD1/wAAAAAAAAAAAAD2/wAAAAAAAAAAAAD3/wAAAAAAAAAAAAD4/wAAAAAAAAAAAAD5/wAAAAAAAAAAAAD6/wAAAAAAAAAAAAD7/wAAAAAAAAAAAAD8/wAAAAAAAAAAAAD9/wAAAAAAAAAAAAD+/wAAAAAAAAAAAAD//wAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAALAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAARAAAAAAAAAAAAAAASAAAAAAAAAAAAAAATAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAVAAAAAAAAAAAAAAAWAAAAAAAAAAAAAAAXAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAbAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAdAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAfAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAjAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAlAAAAAAAAAAAAAAAmAAAAAAAAAAAAAAAnAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAApAAAAAAAAAAAAAAAqAAAAAAAAAAAAAAArAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAAtAAAAAAAAAAAAAAAuAAAAAAAAAAAAAAAvAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAHAP//AAAAAAAAAADu//f/AAAAAAAAAADv//f/AAAAAAAAAADw//f/AAAAAAAAAADx//f/AAAAAAAAAADy//f/AAAAAAAAAADz//f/AAAAAAAAAAD0//f/AAAAAAAAAAD1//f/AAAAAAAAAAD2//f/AAAAAAAAAAD3//f/AAAAAAAAAAAeAP//AAAAAAAAAAD9//f/AAAAAAAAAAD+//f/AAAAAAAAAAD///f/AAAAAAAAAAAAAPf/AAAAAAAAAAANAP//AAAAAAAAAAA=")
 tile_set = SubResource("TileSet_twyb5")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="TileMapLayer" unique_id=1850787204]
+[node name="TileMapLayer" type="TileMapLayer" parent="TileMapLayer"]
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="TileMapLayer" unique_id=1546575468]
+[node name="TileMapLayer2" type="TileMapLayer" parent="TileMapLayer"]
 
-[node name="Personaje" parent="." unique_id=1118636508 instance=ExtResource("2_verny")]
+[node name="Personaje" parent="." instance=ExtResource("2_verny")]
 position = Vector2(-324, 26)
 
-[node name="Camera2D" type="Camera2D" parent="Personaje" unique_id=784293449]
-position = Vector2(0, -109.00001)
-scale = Vector2(0.99999994, 0.99999994)
+[node name="Camera2D" type="Camera2D" parent="Personaje"]
+position = Vector2(0, -109)
+scale = Vector2(1, 1)
 zoom = Vector2(2, 2)
 limit_left = -500
 limit_top = -500
 limit_right = 2916
 limit_bottom = 500
 
-[node name="Zona de muerte" parent="." unique_id=1149468401 instance=ExtResource("5_twyb5")]
+[node name="Zona de muerte" parent="." instance=ExtResource("5_twyb5")]
 position = Vector2(-324, 223)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Zona de muerte" unique_id=1515796463]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zona de muerte"]
 position = Vector2(1196, -142)
 shape = SubResource("RectangleShape2D_x5dvj")
 
-[node name="fondo de tristeza" type="Sprite2D" parent="." unique_id=1998463683]
-visible = false
-position = Vector2(-213.00002, -125)
-scale = Vector2(1.79375, 1.8555555)
+[node name="fondo de tristeza" type="Sprite2D" parent="."]
+position = Vector2(-213, -125)
+scale = Vector2(1.79375, 1.85556)
 texture = ExtResource("4_twyb5")
 
-[node name="AnimatableBody2D" parent="." unique_id=1994916199 instance=ExtResource("6_x5dvj")]
+[node name="AnimatableBody2D" parent="." instance=ExtResource("6_x5dvj")]
 position = Vector2(88, -47)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=1668753222]
-libraries/ = SubResource("AnimationLibrary_ig15d")
-autoplay = &"Movimiento"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_ig15d")
+}
+autoplay = "Movimiento"
 
-[node name="EnemigoHongo" parent="." unique_id=1870158058 instance=ExtResource("7_15pll")]
-position = Vector2(220, -20)
+[node name="EnemigoHongo" parent="." instance=ExtResource("7_15pll")]
+position = Vector2(206, -15)

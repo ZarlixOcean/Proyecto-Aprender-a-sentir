@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://c4spc2dlnuk5q"]
+[gd_scene load_steps=14 format=3 uid="uid://c4spc2dlnuk5q"]
 
 [ext_resource type="Script" uid="uid://bykvd5t5vpsdt" path="res://Scripts/personaje.gd" id="1_0kjke"]
 [ext_resource type="Texture2D" uid="uid://ccqk28hexupor" path="res://Sprites/Jugador Pred. Niño Caminar (1).png" id="2_tk1jt"]
@@ -76,16 +76,16 @@ animations = [{
 radius = 12.0
 height = 46.0
 
-[node name="Personaje" type="CharacterBody2D" unique_id=1118636508 groups=["Personaje"]]
+[node name="Personaje" type="CharacterBody2D" groups=["Personaje"]]
 z_index = 5
 script = ExtResource("1_0kjke")
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=899285877]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-16, -69)
 scale = Vector2(0.941176, 0.779661)
 sprite_frames = SubResource("SpriteFrames_ndubs")
 animation = &"caminar"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=184571173]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-16, -69)
 shape = SubResource("CapsuleShape2D_tk1jt")
