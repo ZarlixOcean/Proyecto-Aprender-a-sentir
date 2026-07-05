@@ -5,6 +5,5 @@ func _ready():
 
 func _on_body_entered(body):
 	if body.is_in_group("Personaje"):
-		print("¡Estrella tocada!")
 		GameManager.collect_item()
 		call_deferred("queue_free")

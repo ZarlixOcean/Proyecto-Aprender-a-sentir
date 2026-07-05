@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b3kiy8cd2fiuf"]
+
+[ext_resource type="Script" uid="uid://cdwjtec1sat2e" path="res://Scripts/Items/NormalItem.gd" id="1_4dxrw"]
+[ext_resource type="Texture2D" uid="uid://bsj1a6olaqpvp" path="res://Sprites/Tierra (Ítem).png" id="2_n1kga"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_star"]
+radius = 20.0
+
+[node name="NormalItem" type="Area2D"]
+script = ExtResource("1_4dxrw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_n1kga")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_star")

@@ -8,7 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/zona_de_muerte.tscn" id="7_0j1xo"]
 [ext_resource type="PackedScene" uid="uid://hvy4wmhg2xjx" path="res://Escenas/enemigo_hongo.tscn" id="7_5n40s"]
 [ext_resource type="AudioStream" uid="uid://dji5k7qgjvx8p" path="res://Musica y sonidos/Musica nivel alegria.mp3" id="8_a6qbv"]
-[ext_resource type="PackedScene" uid="uid://staritem001" path="res://Escenas/items/StarItem.tscn" id="10_star"]
+[ext_resource type="PackedScene" uid="uid://staritem001" path="res://Escenas/Items/StarItem.tscn" id="10_star"]
+[ext_resource type="PackedScene" uid="uid://nj2rri2ahxr8" path="res://Escenas/Items/GotaItem.tscn" id="11_gota"]
+[ext_resource type="PackedScene" uid="uid://b3kiy8cd2fiuf" path="res://Escenas/Items/TierraItem.tscn" id="12_tierra"]
+[ext_resource type="PackedScene" path="res://Escenas/Items/FinalItem.tscn" id="13_corazon"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2p4op"]
 texture = ExtResource("1_2v560")
@@ -162,6 +165,21 @@ autoplay = true
 
 [node name="StarItem" parent="." unique_id=312519888 instance=ExtResource("10_star")]
 position = Vector2(282, -152)
+
+[node name="Gota1" parent="." unique_id=495469614 instance=ExtResource("11_gota")]
+position = Vector2(540, -129)
+
+[node name="Gota2" parent="." unique_id=776811281 instance=ExtResource("11_gota")]
+position = Vector2(809, -167)
+
+[node name="Tierra1" parent="." unique_id=524690563 instance=ExtResource("12_tierra")]
+position = Vector2(1210, -129)
+
+[node name="Tierra2" parent="." unique_id=824120223 instance=ExtResource("12_tierra")]
+position = Vector2(1400, -130)
+
+[node name="CorazonFinal" parent="." unique_id=400979279 instance=ExtResource("13_corazon")]
+position = Vector2(2716, -136)
 
 [node name="Personaje" parent="." unique_id=399324649 instance=ExtResource("2_2v560")]
 position = Vector2(-234, 7)

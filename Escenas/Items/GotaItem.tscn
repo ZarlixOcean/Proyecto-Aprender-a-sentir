@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://nj2rri2ahxr8"]
+
+[ext_resource type="Script" uid="uid://cdwjtec1sat2e" path="res://Scripts/Items/NormalItem.gd" id="1_q1acp"]
+[ext_resource type="Texture2D" uid="uid://bsyf8awvju83x" path="res://Sprites/Gota de agua (Ítem).png" id="2_b5gr1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_star"]
+radius = 20.0
+
+[node name="NormalItem" type="Area2D"]
+script = ExtResource("1_q1acp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_b5gr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_star")

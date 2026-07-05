@@ -14,12 +14,14 @@ func _process(delta: float) -> void:
 	if ray_cast_2_derecha.is_colliding():
 		var colision = ray_cast_2_derecha.get_collider()
 		if colision and colision.is_in_group("Personaje"):
+			GameManager.reset_items()
 			get_tree().reload_current_scene()
 			return
 		direccion = -1
 	if ray_cast_2_izquierda.is_colliding():
 		var colision = ray_cast_2_izquierda.get_collider()
 		if colision and colision.is_in_group("Personaje"):
+			GameManager.reset_items()
 			get_tree().reload_current_scene()
 			return
 		direccion = 1
