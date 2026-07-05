@@ -159,9 +159,10 @@ position = Vector2(887, -109)
 [node name="EnemigoHongo5" parent="Zona de muerte" unique_id=191888127 instance=ExtResource("7_5n40s")]
 position = Vector2(1612, -109)
 
-[node name="Musica" type="AudioStreamPlayer2D" parent="." unique_id=1283370351]
+[node name="Musica" type="AudioStreamPlayer" parent="." unique_id=1283370351]
 stream = ExtResource("8_a6qbv")
 autoplay = true
+volume_db = 0.0
 
 [node name="StarItem" parent="." unique_id=312519888 instance=ExtResource("10_star")]
 position = Vector2(282, -152)
