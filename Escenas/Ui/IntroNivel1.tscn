@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Ui/ReproducirVideo.gd" id="1_vid"]
-[ext_resource type="VideoStream" path="res://Videos/Animacion de inicio nivel 1.webm" id="2_vid"]
+[ext_resource type="VideoStream" path="res://Videos/intro_nivel1.ogv" id="2_vid"]
 
 [node name="IntroNivel1" type="VideoStreamPlayer"]
 script = ExtResource("1_vid")
