@@ -3,6 +3,7 @@ extends Node
 signal items_updated(collected: int, total: int)
 signal all_items_collected
 signal final_item_collected
+signal show_alegria_message(message_id: int)
 
 var current_level: int = 1
 var items_collected: int = 0
@@ -23,6 +24,7 @@ func collect_item():
 	items_collected += 1
 	var total = items_needed.get(current_level, 5)
 	items_updated.emit(items_collected, total)
+	show_alegria_message.emit(randi() % 16 + 1)
 	print("Items: ", items_collected, "/", total)
 	if items_collected >= total and not final_item_active:
 		final_item_active = true

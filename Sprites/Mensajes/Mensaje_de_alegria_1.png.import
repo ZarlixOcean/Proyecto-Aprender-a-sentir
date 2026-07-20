@@ -10,7 +10,7 @@ metadata={
 
 [deps]
 
-source_file="res://Sprites/Mensaje_de_alegria_1.png"
+source_file="res://Sprites/Mensajes/Mensaje_de_alegria_1.png"
 dest_files=["res://.godot/imported/Mensaje_de_alegria_1.png-bcba15d7bf250d2272b1492d54642ca2.ctex"]
 
 [params]

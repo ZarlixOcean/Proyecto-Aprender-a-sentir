@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://b3kiy8cd2fiuf" path="res://Escenas/Items/TierraItem.tscn" id="12_tierra"]
 [ext_resource type="PackedScene" uid="uid://bbc5dfoggf633" path="res://Escenas/Items/FinalItem.tscn" id="13_corazon"]
 [ext_resource type="PackedScene" uid="uid://kqev5unkdlwm" path="res://Escenas/CorazónItem.tscn" id="13_u1sot"]
+[ext_resource type="Script" path="res://Scripts/Ui/MensajeAlegria.gd" id="14_msj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2p4op"]
 texture = ExtResource("1_2v560")
@@ -238,3 +239,6 @@ limit_left = -545
 limit_top = -548
 limit_right = 6196
 limit_bottom = 452
+
+[node name="MensajesAlegria" type="CanvasLayer" parent="." unique_id=261004263]
+script = ExtResource("14_msj")
