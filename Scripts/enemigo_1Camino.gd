@@ -16,14 +16,14 @@ func _morir(body):
 
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("Personaje"):
-		if body.velocity.y > 0 and body.global_position.y < global_position.y:
+		if body.velocity.y > 0:
 			_pisar(body)
 		else:
 			_morir(body)
 
 func _on_area_2d_2_body_entered(body):
 	if body.is_in_group("Personaje"):
-		if body.velocity.y > 0 and body.global_position.y < global_position.y:
+		if body.velocity.y > 0:
 			_pisar(body)
 		else:
 			_morir(body)
