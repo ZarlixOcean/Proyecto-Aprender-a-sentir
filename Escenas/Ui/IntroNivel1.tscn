@@ -4,6 +4,8 @@
 [ext_resource type="VideoStream" path="res://Videos/intro_nivel1.ogv" id="2_vid"]
 
 [node name="IntroNivel1" type="VideoStreamPlayer"]
+layout_mode = 3
+anchors_preset = 15
 script = ExtResource("1_vid")
 stream = ExtResource("2_vid")
 autoplay = true
