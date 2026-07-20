@@ -28,7 +28,7 @@ func _process(_delta):
 	var viewport = get_viewport()
 	var canvas_transform = viewport.get_canvas_transform()
 	var player_screen = canvas_transform * player.global_position
-	var screen_size = viewport.size
+	var screen_size = Vector2(viewport.size)
 	material.set_shader_parameter("player_uv", player_screen / screen_size)
 
 func _on_items_updated(recolectadas: int, total: int):
