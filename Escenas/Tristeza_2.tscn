@@ -165,17 +165,9 @@ autoplay = &"RESET"
 [node name="EnemigoHongo" parent="." unique_id=1179742102 instance=ExtResource("7_15pll")]
 position = Vector2(650, -15)
 
-[node name="PointLight2D" type="PointLight2D" parent="Personaje"]
-texture_scale = 0.5
-energy = 2.0
-
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.03, 0.03, 0.08, 1)
-
-[node name="ControlLuz" type="Node" parent="."]
+[node name="ControlLuz" type="CanvasLayer" parent="."]
+layer = 1
 script = ExtResource("13_luz")
-luz_punto = NodePath("Personaje/PointLight2D")
-modulador = NodePath("CanvasModulate")
 
 [node name="MensajesAlegria" type="CanvasLayer" parent="."]
 script = ExtResource("12_msj")

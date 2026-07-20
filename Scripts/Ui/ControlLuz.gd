@@ -1,22 +1,41 @@
-extends Node
+extends CanvasLayer
 
-@export var luz_punto: PointLight2D
-@export var modulador: CanvasModulate
-
-var oscuridad_inicial := Color(0.03, 0.03, 0.08)
-var escala_luz_inicial := 0.5
-var escala_luz_final := 5.0
+var color_rect: ColorRect
+var material: ShaderMaterial
 
 func _ready():
+	layer = 1
+
+	color_rect = ColorRect.new()
+	color_rect.anchors_preset = Control.PRESET_FULL_RECT
+	color_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	color_rect.color = Color.TRANSPARENT
+
+	material = ShaderMaterial.new()
+	material.shader = preload("res://Shaders/oscuridad.gdshader")
+	color_rect.material = material
+
+	add_child(color_rect)
+
 	GameManager.items_updated.connect(_on_items_updated)
 	_actualizar_luz(0, GameManager.items_needed.get(GameManager.current_level, 5))
+
+func _process(_delta):
+	var player = get_tree().get_first_node_in_group("Personaje")
+	if not player or not material:
+		return
+
+	var viewport = get_viewport()
+	var canvas_transform = viewport.get_canvas_transform()
+	var player_screen = canvas_transform * player.global_position
+	var screen_size = viewport.get_visible_rect().size
+	material.set_shader_parameter("player_uv", player_screen / screen_size)
 
 func _on_items_updated(recolectadas: int, total: int):
 	_actualizar_luz(recolectadas, total)
 
 func _actualizar_luz(recolectadas: int, total: int):
 	var progreso = float(recolectadas) / total if total > 0 else 0.0
-	if modulador:
-		modulador.color = oscuridad_inicial.lerp(Color.WHITE, progreso)
-	if luz_punto:
-		luz_punto.texture_scale = lerp(escala_luz_inicial, escala_luz_final, progreso)
+	if material:
+		material.set_shader_parameter("radio", lerp(0.12, 0.6, progreso))
+		material.set_shader_parameter("oscuridad", lerp(0.02, 1.0, progreso))
