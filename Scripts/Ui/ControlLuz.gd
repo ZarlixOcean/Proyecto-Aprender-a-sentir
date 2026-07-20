@@ -9,7 +9,7 @@ func _ready():
 	color_rect = ColorRect.new()
 	color_rect.anchors_preset = Control.PRESET_FULL_RECT
 	color_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	color_rect.color = Color.TRANSPARENT
+	color_rect.color = Color.BLACK
 
 	material = ShaderMaterial.new()
 	material.shader = preload("res://Shaders/oscuridad.gdshader")
@@ -28,7 +28,7 @@ func _process(_delta):
 	var viewport = get_viewport()
 	var canvas_transform = viewport.get_canvas_transform()
 	var player_screen = canvas_transform * player.global_position
-	var screen_size = viewport.get_visible_rect().size
+	var screen_size = viewport.size
 	material.set_shader_parameter("player_uv", player_screen / screen_size)
 
 func _on_items_updated(recolectadas: int, total: int):
@@ -37,5 +37,5 @@ func _on_items_updated(recolectadas: int, total: int):
 func _actualizar_luz(recolectadas: int, total: int):
 	var progreso = float(recolectadas) / total if total > 0 else 0.0
 	if material:
-		material.set_shader_parameter("radio", lerp(0.12, 0.6, progreso))
-		material.set_shader_parameter("oscuridad", lerp(0.02, 1.0, progreso))
+		material.set_shader_parameter("radio", lerp(0.12, 0.65, progreso))
+		material.set_shader_parameter("oscuridad", lerp(0.03, 1.0, progreso))

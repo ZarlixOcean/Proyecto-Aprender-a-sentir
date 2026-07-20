@@ -12,5 +12,5 @@ void fragment() {
 	float alpha = clamp(t, 0.0, 1.0);
 	vec3 dark = color.rgb * oscuridad;
 	COLOR.rgb = mix(dark, color.rgb, alpha);
-	COLOR.a = mix(1.0, 0.0, alpha);
+	COLOR.a = 1.0;
 }
