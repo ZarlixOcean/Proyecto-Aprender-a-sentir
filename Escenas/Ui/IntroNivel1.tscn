@@ -7,6 +7,7 @@
 layout_mode = 3
 anchors_preset = 15
 script = ExtResource("1_vid")
+siguiente_escena = "res://Escenas/Ui/ExplicacionNivel1.tscn"
 stream = ExtResource("2_vid")
 autoplay = true
 expand = true

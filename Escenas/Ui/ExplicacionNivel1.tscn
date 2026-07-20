@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Ui/ReproducirVideo.gd" id="1_vid"]
+[ext_resource type="VideoStream" path="res://Videos/explicacion_nivel1.ogv" id="2_vid"]
+
+[node name="ExplicacionNivel1" type="VideoStreamPlayer"]
+layout_mode = 3
+anchors_preset = 15
+script = ExtResource("1_vid")
+siguiente_escena = "res://Escenas/Felicidad_1.tscn"
+stream = ExtResource("2_vid")
+autoplay = true
+expand = true
