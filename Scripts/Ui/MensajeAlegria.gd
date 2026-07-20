@@ -32,7 +32,7 @@ func _mostrar(id: int):
 	msg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	msg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
-	var tam := texture.get_size() * 0.8
+	var tam: Vector2 = Vector2(texture.get_size()) * 0.8
 	msg.size = tam
 	print("MensajeAlegria: tam = ", tam)
 
