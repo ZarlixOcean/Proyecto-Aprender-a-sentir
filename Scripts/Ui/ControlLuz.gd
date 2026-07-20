@@ -38,4 +38,4 @@ func _actualizar_luz(recolectadas: int, total: int):
 	var progreso = float(recolectadas) / total if total > 0 else 0.0
 	if material:
 		material.set_shader_parameter("radio", lerp(0.12, 0.65, progreso))
-		material.set_shader_parameter("oscuridad", lerp(0.03, 1.0, progreso))
+		material.set_shader_parameter("progreso", progreso)

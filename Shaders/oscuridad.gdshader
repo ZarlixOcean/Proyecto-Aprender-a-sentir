@@ -2,15 +2,12 @@ shader_type canvas_item;
 
 uniform vec2 player_uv = vec2(0.5);
 uniform float radio = 0.15;
-uniform float oscuridad = 0.03;
 uniform float suavizado = 0.04;
+uniform float progreso = 0.0;
 
 void fragment() {
-	vec4 color = texture(SCREEN_TEXTURE, SCREEN_UV);
 	float dist = distance(SCREEN_UV, player_uv);
-	float t = (radio - dist) / suavizado;
-	float alpha = clamp(t, 0.0, 1.0);
-	vec3 dark = color.rgb * oscuridad;
-	COLOR.rgb = mix(dark, color.rgb, alpha);
-	COLOR.a = 1.0;
+	float circle_mask = 1.0 - smoothstep(radio - suavizado, radio + suavizado, dist);
+	float alpha = (1.0 - circle_mask) * (1.0 - progreso);
+	COLOR = vec4(0.0, 0.0, 0.0, alpha);
 }
