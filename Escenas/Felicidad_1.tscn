@@ -205,6 +205,7 @@ position = Vector2(4982, -109)
 [node name="Musica" type="AudioStreamPlayer" parent="." unique_id=219482596]
 stream = ExtResource("8_a6qbv")
 autoplay = true
+parameters/looping = true
 
 [node name="StarItem" parent="." unique_id=1784064391 instance=ExtResource("10_star")]
 position = Vector2(216, -152)

@@ -7,7 +7,7 @@ signal final_item_collected
 var current_level: int = 1
 var items_collected: int = 0
 var items_needed: Dictionary = {
-	1: 5, 2: 5, 3: 6, 4: 6, 5: 7
+	1: 6, 2: 5, 3: 6, 4: 6, 5: 7
 }
 var final_item_active: bool = false
 
@@ -31,3 +31,5 @@ func collect_item():
 func collect_final_item():
 	final_item_collected.emit()
 	print("¡Corazón recolectado! Nivel completado.")
+	await get_tree().create_timer(0.5).timeout
+	get_tree().change_scene_to_file("res://Escenas/Ui/FinalNivel1.tscn")
