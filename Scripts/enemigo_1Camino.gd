@@ -9,7 +9,15 @@ var direccion = 1
 
 func _ready() -> void:
 	pass
-	
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("Personaje"):
+		get_tree().reload_current_scene()
+
+func _on_area_2d_2_body_entered(body):
+	if body.is_in_group("Personaje"):
+		get_tree().reload_current_scene()
+
 func _process(delta: float) -> void:
 	if ray_cast_derecha.is_colliding():
 		var colision = ray_cast_derecha.get_collider()

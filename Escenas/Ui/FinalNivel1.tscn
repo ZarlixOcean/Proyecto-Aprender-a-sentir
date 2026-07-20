@@ -5,6 +5,7 @@
 
 [node name="FinalNivel1" type="VideoStreamPlayer"]
 script = ExtResource("1_vid")
+siguiente_escena = "res://Escenas/Ui/Victoria.tscn"
 stream = ExtResource("2_vid")
 autoplay = true
 expand = true
