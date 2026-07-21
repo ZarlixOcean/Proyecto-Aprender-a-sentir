@@ -1,4 +1,5 @@
 shader_type canvas_item;
+render_mode blend_mix;
 
 uniform vec2 player_uv = vec2(0.5);
 uniform float radio = 0.15;

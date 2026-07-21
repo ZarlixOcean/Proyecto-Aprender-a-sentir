@@ -7,7 +7,6 @@ func _ready():
 	layer = 1
 
 	color_rect = ColorRect.new()
-	color_rect.anchors_preset = Control.PRESET_FULL_RECT
 	color_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	color_rect.color = Color.BLACK
 
@@ -17,8 +16,16 @@ func _ready():
 
 	add_child(color_rect)
 
+	_resize()
+	get_viewport().size_changed.connect(_resize)
+
 	GameManager.items_updated.connect(_on_items_updated)
 	_actualizar_luz(0, GameManager.items_needed.get(GameManager.current_level, 5))
+
+func _resize():
+	if color_rect:
+		color_rect.size = get_viewport().size
+		color_rect.position = Vector2.ZERO
 
 func _process(_delta):
 	var player = get_tree().get_first_node_in_group("Personaje")
