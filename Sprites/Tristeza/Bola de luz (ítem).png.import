@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rduoopvpnokp"
-path="res://.godot/imported/Corazón (Item).png-018032ddc7ceef4659a4ec7dcc79cbd4.ctex"
+uid="uid://dkuh4f3ol3sow"
+path="res://.godot/imported/Bola de luz (ítem).png-4327bed42a86242e642f7c108382dae0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Corazón (Item).png"
-dest_files=["res://.godot/imported/Corazón (Item).png-018032ddc7ceef4659a4ec7dcc79cbd4.ctex"]
+source_file="res://Sprites/Tristeza/Bola de luz (ítem).png"
+dest_files=["res://.godot/imported/Bola de luz (ítem).png-4327bed42a86242e642f7c108382dae0.ctex"]
 
 [params]
 

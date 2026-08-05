@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsyf8awvju83x"
-path="res://.godot/imported/Gota de agua (Ítem).png-eb96d27295589c8afe299bf24189ac66.ctex"
+uid="uid://c05qcfo6nyrm7"
+path="res://.godot/imported/Personaje Principal cayendo.png-5c6651b346e6bd2b66b5e331f1a6d46a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Gota de agua (Ítem).png"
-dest_files=["res://.godot/imported/Gota de agua (Ítem).png-eb96d27295589c8afe299bf24189ac66.ctex"]
+source_file="res://Sprites/Alegria/Personaje Principal cayendo.png"
+dest_files=["res://.godot/imported/Personaje Principal cayendo.png-5c6651b346e6bd2b66b5e331f1a6d46a.ctex"]
 
 [params]
 

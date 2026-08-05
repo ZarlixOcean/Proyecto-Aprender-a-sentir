@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fpdxq5l54ubv"
-path="res://.godot/imported/Cercas blancas grandes.png-2b8f880b5ad953fe8aa08897e8ec1aaf.ctex"
+uid="uid://elxg22y35sjv"
+path="res://.godot/imported/tierra plataforma pequeña.png-96cdf384c7c5564a08d2a525e4785b71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Cercas blancas grandes.png"
-dest_files=["res://.godot/imported/Cercas blancas grandes.png-2b8f880b5ad953fe8aa08897e8ec1aaf.ctex"]
+source_file="res://Sprites/Tristeza/tierra plataforma pequeña.png"
+dest_files=["res://.godot/imported/tierra plataforma pequeña.png-96cdf384c7c5564a08d2a525e4785b71.ctex"]
 
 [params]
 

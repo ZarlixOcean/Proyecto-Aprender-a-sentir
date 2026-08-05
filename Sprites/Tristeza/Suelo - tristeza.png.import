@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drnh3t3dng2al"
-path="res://.godot/imported/Suelo - tristeza.png-271131249230a72f047302f5f0d4e2db.ctex"
+path="res://.godot/imported/Suelo - tristeza.png-0b260128ca09a0f29cebbe7eac06bb0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Suelo - tristeza.png"
-dest_files=["res://.godot/imported/Suelo - tristeza.png-271131249230a72f047302f5f0d4e2db.ctex"]
+source_file="res://Sprites/Tristeza/Suelo - tristeza.png"
+dest_files=["res://.godot/imported/Suelo - tristeza.png-0b260128ca09a0f29cebbe7eac06bb0c.ctex"]
 
 [params]
 

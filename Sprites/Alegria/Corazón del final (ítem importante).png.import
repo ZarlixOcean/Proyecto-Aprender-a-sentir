@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fasld6p32f61"
-path="res://.godot/imported/Perosnaje Principal Quieto .png-541998ec41ad9eaf02aa7be6c8866212.ctex"
+uid="uid://b7e3c6dxc3vwd"
+path="res://.godot/imported/Corazón del final (ítem importante).png-41cd952300a6a41d6660fb61554ff6f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Perosnaje Principal Quieto .png"
-dest_files=["res://.godot/imported/Perosnaje Principal Quieto .png-541998ec41ad9eaf02aa7be6c8866212.ctex"]
+source_file="res://Sprites/Alegria/Corazón del final (ítem importante).png"
+dest_files=["res://.godot/imported/Corazón del final (ítem importante).png-41cd952300a6a41d6660fb61554ff6f0.ctex"]
 
 [params]
 

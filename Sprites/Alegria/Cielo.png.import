@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf803o3g032bj"
-path="res://.godot/imported/Gusano (Enemigo).png-8606c9e359be166ffd6aedffca6152ee.ctex"
+uid="uid://dxr01uewg3iau"
+path="res://.godot/imported/Cielo.png-40e23588e21a1daa10c1ee1176f71925.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Gusano (Enemigo).png"
-dest_files=["res://.godot/imported/Gusano (Enemigo).png-8606c9e359be166ffd6aedffca6152ee.ctex"]
+source_file="res://Sprites/Alegria/Cielo.png"
+dest_files=["res://.godot/imported/Cielo.png-40e23588e21a1daa10c1ee1176f71925.ctex"]
 
 [params]
 

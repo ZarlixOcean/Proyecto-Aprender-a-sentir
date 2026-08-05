@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsj1a6olaqpvp"
-path="res://.godot/imported/Tierra (Ítem).png-52b63b070d97928f20380ebb3201cd01.ctex"
+uid="uid://bc8ioen2ii6jp"
+path="res://.godot/imported/Personaje caminando con lámpara.png-4d81650231b8b244911b1d7c545e81b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tierra (Ítem).png"
-dest_files=["res://.godot/imported/Tierra (Ítem).png-52b63b070d97928f20380ebb3201cd01.ctex"]
+source_file="res://Sprites/Tristeza/Personaje caminando con lámpara.png"
+dest_files=["res://.godot/imported/Personaje caminando con lámpara.png-4d81650231b8b244911b1d7c545e81b3.ctex"]
 
 [params]
 

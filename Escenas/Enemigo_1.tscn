@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bgwwhltutg6hf"]
+[gd_scene format=3 uid="uid://bgwwhltutg6hf"]
 
 [ext_resource type="Script" uid="uid://n4lupnwthc6m" path="res://Scripts/enemigo_1Camino.gd" id="1_l06m2"]
-[ext_resource type="Texture2D" uid="uid://csw04656stcn6" path="res://Sprites/Hongo AnimaciÃ³n Caminar.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://csw04656stcn6" path="res://Sprites/Alegria/Hongo AnimaciÃ³n Caminar.png" id="1_wtcfe"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
 atlas = ExtResource("1_wtcfe")
@@ -32,33 +32,33 @@ size = Vector2(12.5, 6)
 radius = 6.0
 height = 18.0
 
-[node name="Enemigo_Hongo" type="Node2D"]
+[node name="Enemigo_Hongo" type="Node2D" unique_id=1331703022]
 script = ExtResource("1_l06m2")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1864481040]
 sprite_frames = SubResource("SpriteFrames_0hol4")
 animation = &"caminar"
 autoplay = "caminar"
 frame = 1
 frame_progress = 1.0
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=173059828]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1060946663]
 position = Vector2(0, -7)
 shape = SubResource("RectangleShape2D_q6r6c")
 
-[node name="Area2D2" type="Area2D" parent="."]
+[node name="Area2D2" type="Area2D" parent="." unique_id=1177027629]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=939622813]
 position = Vector2(0, 6)
 rotation = -1.5708
 shape = SubResource("CapsuleShape2D_kdubu")
 
-[node name="RayCastDerecha" type="RayCast2D" parent="."]
+[node name="RayCastDerecha" type="RayCast2D" parent="." unique_id=509353579]
 target_position = Vector2(13, 0)
 
-[node name="RayCastIzquierda" type="RayCast2D" parent="."]
+[node name="RayCastIzquierda" type="RayCast2D" parent="." unique_id=1958313831]
 target_position = Vector2(-13, -1)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

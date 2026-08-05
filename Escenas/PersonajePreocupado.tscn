@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dgqwamins363x"]
+
+[ext_resource type="Texture2D" uid="uid://bc8ioen2ii6jp" path="res://Sprites/Tristeza/Personaje caminando con lámpara.png" id="1_chbwn"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1669754658]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1680426689]
+texture = ExtResource("1_chbwn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1869947272]

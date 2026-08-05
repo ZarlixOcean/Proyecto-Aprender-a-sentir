@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccqk28hexupor"
-path="res://.godot/imported/Jugador Pred. Niño Caminar (1).png-26f0abc748b7a000e89b60f1edcced36.ctex"
+uid="uid://c0jdtcrm7ocp2"
+path="res://.godot/imported/Escenario completo.png-5ea49c896056ffdb184128c122bd2745.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Jugador Pred. Niño Caminar (1).png"
-dest_files=["res://.godot/imported/Jugador Pred. Niño Caminar (1).png-26f0abc748b7a000e89b60f1edcced36.ctex"]
+source_file="res://Sprites/Tristeza/Escenario completo.png"
+dest_files=["res://.godot/imported/Escenario completo.png-5ea49c896056ffdb184128c122bd2745.ctex"]
 
 [params]
 

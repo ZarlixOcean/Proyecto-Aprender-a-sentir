@@ -1,16 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://staritem001"]
+[gd_scene format=3 uid="uid://staritem001"]
 
 [ext_resource type="Script" uid="uid://dtcjtvrplejmp" path="res://Scripts/Items/StarItem.gd" id="1_star"]
-[ext_resource type="Texture2D" uid="uid://d0g5penjjs6cx" path="res://Sprites/Estrella (Ítem).png" id="2_star"]
+[ext_resource type="Texture2D" uid="uid://d0g5penjjs6cx" path="res://Sprites/Alegria/Estrella (Ítem).png" id="2_star"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_star"]
 radius = 20.0
 
-[node name="StarItem" type="Area2D"]
+[node name="StarItem" type="Area2D" unique_id=413826364]
 script = ExtResource("1_star")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1305583022]
 texture = ExtResource("2_star")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=261833386]
 shape = SubResource("CircleShape2D_star")

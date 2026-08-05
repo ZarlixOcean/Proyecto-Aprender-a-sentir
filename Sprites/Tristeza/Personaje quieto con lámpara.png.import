@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://elxg22y35sjv"
-path="res://.godot/imported/tierra plataforma pequeña.png-5ef5179a3b0841cd0a5e95586d10142a.ctex"
+uid="uid://drgi620a1vd0v"
+path="res://.godot/imported/Personaje quieto con lámpara.png-b7a07f258eb7fe6b226a19cc9bcdeaca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/tierra plataforma pequeña.png"
-dest_files=["res://.godot/imported/tierra plataforma pequeña.png-5ef5179a3b0841cd0a5e95586d10142a.ctex"]
+source_file="res://Sprites/Tristeza/Personaje quieto con lámpara.png"
+dest_files=["res://.godot/imported/Personaje quieto con lámpara.png-b7a07f258eb7fe6b226a19cc9bcdeaca.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cos4ox6recoas"
-path="res://.godot/imported/Nube.png-dc041eafe7bf493816fe1369c9162efb.ctex"
+uid="uid://bse2bi7h0177e"
+path="res://.godot/imported/Caminar personaje niño.png-3e0631e7ff34749f57a90f48288f3814.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Nube.png"
-dest_files=["res://.godot/imported/Nube.png-dc041eafe7bf493816fe1369c9162efb.ctex"]
+source_file="res://Sprites/Alegria/Caminar personaje niño.png"
+dest_files=["res://.godot/imported/Caminar personaje niño.png-3e0631e7ff34749f57a90f48288f3814.ctex"]
 
 [params]
 

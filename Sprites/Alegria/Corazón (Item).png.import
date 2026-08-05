@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csw04656stcn6"
-path="res://.godot/imported/Hongo AnimaciÃ³n Caminar.png-dccb7873f8fc6bcff587d5ef3386843d.ctex"
+uid="uid://rduoopvpnokp"
+path="res://.godot/imported/Corazón (Item).png-30852f91d5b68a624e3d6b796cd2d738.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Hongo AnimaciÃ³n Caminar.png"
-dest_files=["res://.godot/imported/Hongo AnimaciÃ³n Caminar.png-dccb7873f8fc6bcff587d5ef3386843d.ctex"]
+source_file="res://Sprites/Alegria/Corazón (Item).png"
+dest_files=["res://.godot/imported/Corazón (Item).png-30852f91d5b68a624e3d6b796cd2d738.ctex"]
 
 [params]
 

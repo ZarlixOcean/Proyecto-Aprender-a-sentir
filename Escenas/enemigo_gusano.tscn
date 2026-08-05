@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://y3gy06qq8hjx"]
+[gd_scene format=3 uid="uid://y3gy06qq8hjx"]
 
 [ext_resource type="Script" uid="uid://dbli46ofyriea" path="res://Escenas/gusano_caminar.gd" id="1_1op6t"]
-[ext_resource type="Texture2D" uid="uid://bf803o3g032bj" path="res://Sprites/Gusano (Enemigo).png" id="2_6p50w"]
+[ext_resource type="Texture2D" uid="uid://bf803o3g032bj" path="res://Sprites/Tristeza/Gusano (Enemigo).png" id="2_6p50w"]
 [ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/zona_de_muerte.tscn" id="3_lr8h6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mcqab"]
@@ -30,23 +30,23 @@ animations = [{
 radius = 14.0
 height = 34.0
 
-[node name="EnemigoGusano" type="Node2D"]
+[node name="EnemigoGusano" type="Node2D" unique_id=635476491]
 script = ExtResource("1_1op6t")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=273246781]
 sprite_frames = SubResource("SpriteFrames_luqel")
 autoplay = "default"
 
-[node name="Zona de muerte" parent="." instance=ExtResource("3_lr8h6")]
+[node name="Zona de muerte" parent="." unique_id=1349680949 instance=ExtResource("3_lr8h6")]
 position = Vector2(-26, -13)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Zona de muerte"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zona de muerte" unique_id=1305621627]
 position = Vector2(26, 13)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_y1y00")
 
-[node name="RayCast2Derecha" type="RayCast2D" parent="."]
+[node name="RayCast2Derecha" type="RayCast2D" parent="." unique_id=2114585154]
 target_position = Vector2(14, 0)
 
-[node name="RayCast2Izquierda" type="RayCast2D" parent="."]
+[node name="RayCast2Izquierda" type="RayCast2D" parent="." unique_id=727415081]
 target_position = Vector2(-15, 0)

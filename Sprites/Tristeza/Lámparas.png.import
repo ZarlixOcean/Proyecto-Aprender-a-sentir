@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c05qcfo6nyrm7"
-path="res://.godot/imported/Personaje Principal cayendo.png-2f8b1aeda746728d67a131f92fd18250.ctex"
+uid="uid://deengqr7w7f8d"
+path="res://.godot/imported/Lámparas.png-b31c8d9a980ad3c7b66ea4bff5327484.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Personaje Principal cayendo.png"
-dest_files=["res://.godot/imported/Personaje Principal cayendo.png-2f8b1aeda746728d67a131f92fd18250.ctex"]
+source_file="res://Sprites/Tristeza/Lámparas.png"
+dest_files=["res://.godot/imported/Lámparas.png-b31c8d9a980ad3c7b66ea4bff5327484.ctex"]
 
 [params]
 

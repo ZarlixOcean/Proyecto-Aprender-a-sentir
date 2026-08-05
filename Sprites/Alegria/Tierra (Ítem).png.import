@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bse2bi7h0177e"
-path="res://.godot/imported/Caminar personaje niño.png-0a7b811545de119a35a686b51b149f2d.ctex"
+uid="uid://bsj1a6olaqpvp"
+path="res://.godot/imported/Tierra (Ítem).png-e6d3c0d722cf76097025b667cb2f1bf0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Caminar personaje niño.png"
-dest_files=["res://.godot/imported/Caminar personaje niño.png-0a7b811545de119a35a686b51b149f2d.ctex"]
+source_file="res://Sprites/Alegria/Tierra (Ítem).png"
+dest_files=["res://.godot/imported/Tierra (Ítem).png-e6d3c0d722cf76097025b667cb2f1bf0.ctex"]
 
 [params]
 

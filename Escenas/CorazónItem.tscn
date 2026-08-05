@@ -1,15 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://kqev5unkdlwm"]
+[gd_scene format=3 uid="uid://kqev5unkdlwm"]
 
 [ext_resource type="Script" uid="uid://cdwjtec1sat2e" path="res://Scripts/Items/NormalItem.gd" id="1_by7gc"]
-[ext_resource type="Texture2D" uid="uid://rduoopvpnokp" path="res://Sprites/Corazón (Item).png" id="2_41bl7"]
+[ext_resource type="Texture2D" uid="uid://rduoopvpnokp" path="res://Sprites/Alegria/Corazón (Item).png" id="2_41bl7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w5dm1"]
 
-[node name="Area2D" type="Area2D"]
+[node name="Area2D" type="Area2D" unique_id=1558375726]
 script = ExtResource("1_by7gc")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=399794379]
 texture = ExtResource("2_41bl7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1339889472]
 shape = SubResource("CircleShape2D_w5dm1")

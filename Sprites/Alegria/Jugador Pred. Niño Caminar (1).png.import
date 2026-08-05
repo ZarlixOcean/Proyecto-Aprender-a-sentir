@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0g5penjjs6cx"
-path="res://.godot/imported/Estrella (Ítem).png-a1920344f2e095778518cec593fe2a07.ctex"
+uid="uid://ccqk28hexupor"
+path="res://.godot/imported/Jugador Pred. Niño Caminar (1).png-8abee53945085b17685cddc629fdd854.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Estrella (Ítem).png"
-dest_files=["res://.godot/imported/Estrella (Ítem).png-a1920344f2e095778518cec593fe2a07.ctex"]
+source_file="res://Sprites/Alegria/Jugador Pred. Niño Caminar (1).png"
+dest_files=["res://.godot/imported/Jugador Pred. Niño Caminar (1).png-8abee53945085b17685cddc629fdd854.ctex"]
 
 [params]
 

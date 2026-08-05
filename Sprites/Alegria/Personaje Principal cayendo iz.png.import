@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ppnnst68qkdg"
-path="res://.godot/imported/Perosnaje Principal Quieto  D.png-8d4599ac0033857f902138faf493eab9.ctex"
+uid="uid://ctwi8cug8nlkw"
+path="res://.godot/imported/Personaje Principal cayendo iz.png-90883f312ce2adb24f7a8b4702b5fe22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Perosnaje Principal Quieto  D.png"
-dest_files=["res://.godot/imported/Perosnaje Principal Quieto  D.png-8d4599ac0033857f902138faf493eab9.ctex"]
+source_file="res://Sprites/Alegria/Personaje Principal cayendo iz.png"
+dest_files=["res://.godot/imported/Personaje Principal cayendo iz.png-90883f312ce2adb24f7a8b4702b5fe22.ctex"]
 
 [params]
 

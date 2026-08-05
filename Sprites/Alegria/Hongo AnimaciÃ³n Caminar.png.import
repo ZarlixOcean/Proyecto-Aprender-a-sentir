@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7e3c6dxc3vwd"
-path="res://.godot/imported/Corazón del final (ítem importante).png-4a85a225e306efcdac78a7b89e394818.ctex"
+uid="uid://csw04656stcn6"
+path="res://.godot/imported/Hongo AnimaciÃ³n Caminar.png-1f56a33c7f6a0432e2009e9bee044679.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Corazón del final (ítem importante).png"
-dest_files=["res://.godot/imported/Corazón del final (ítem importante).png-4a85a225e306efcdac78a7b89e394818.ctex"]
+source_file="res://Sprites/Alegria/Hongo AnimaciÃ³n Caminar.png"
+dest_files=["res://.godot/imported/Hongo AnimaciÃ³n Caminar.png-1f56a33c7f6a0432e2009e9bee044679.ctex"]
 
 [params]
 

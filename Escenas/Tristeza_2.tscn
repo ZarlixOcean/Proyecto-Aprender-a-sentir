@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://b3dauubhgile8"]
 
-[ext_resource type="Texture2D" uid="uid://drnh3t3dng2al" path="res://Sprites/Suelo - tristeza.png" id="1_1dshx"]
-[ext_resource type="Texture2D" uid="uid://jrwkht3ajv4u" path="res://Sprites/Suelo.png" id="2_1fn6b"]
+[ext_resource type="Texture2D" uid="uid://drnh3t3dng2al" path="res://Sprites/Tristeza/Suelo - tristeza.png" id="1_1dshx"]
+[ext_resource type="Texture2D" uid="uid://jrwkht3ajv4u" path="res://Sprites/Tristeza/Suelo.png" id="2_1fn6b"]
 [ext_resource type="PackedScene" uid="uid://c4spc2dlnuk5q" path="res://Escenas/Personaje.tscn" id="2_verny"]
-[ext_resource type="Texture2D" uid="uid://c0jdtcrm7ocp2" path="res://Sprites/Escenario completo.png" id="4_twyb5"]
+[ext_resource type="Texture2D" uid="uid://c0jdtcrm7ocp2" path="res://Sprites/Tristeza/Escenario completo.png" id="4_twyb5"]
 [ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/zona_de_muerte.tscn" id="5_twyb5"]
 [ext_resource type="PackedScene" uid="uid://d034k24ciktpd" path="res://Escenas/plataformas_pequeñas.tscn" id="6_x5dvj"]
 [ext_resource type="PackedScene" uid="uid://y3gy06qq8hjx" path="res://Escenas/enemigo_gusano.tscn" id="7_15pll"]
@@ -11,10 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://nj2rri2ahxr8" path="res://Escenas/Items/GotaItem.tscn" id="9_gota"]
 [ext_resource type="PackedScene" uid="uid://b3kiy8cd2fiuf" path="res://Escenas/Items/TierraItem.tscn" id="10_tierra"]
 [ext_resource type="PackedScene" uid="uid://bbc5dfoggf633" path="res://Escenas/Items/FinalItem.tscn" id="11_final"]
-[ext_resource type="Script" path="res://Scripts/Ui/MensajeAlegria.gd" id="12_msj"]
-[ext_resource type="Script" path="res://Scripts/Ui/ControlLuz.gd" id="13_luz"]
+[ext_resource type="Script" uid="uid://bywqqp7h828st" path="res://Scripts/Ui/MensajeAlegria.gd" id="12_msj"]
+[ext_resource type="Script" uid="uid://b2smwom73uakm" path="res://Scripts/Ui/ControlLuz.gd" id="13_luz"]
 [ext_resource type="AudioStream" uid="uid://dji5k7qgjvx8p" path="res://Musica y sonidos/Musica nivel alegria.mp3" id="14_musica"]
-[ext_resource type="Script" path="res://Scripts/FondoSigue.gd" id="15_fondo"]
+[ext_resource type="Script" uid="uid://dgaw68eqp8njv" path="res://Scripts/FondoSigue.gd" id="15_fondo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1fn6b"]
 texture = ExtResource("1_1dshx")
@@ -145,10 +145,10 @@ position = Vector2(1196, -142)
 shape = SubResource("RectangleShape2D_x5dvj")
 
 [node name="fondo de tristeza" type="Sprite2D" parent="." unique_id=1162755698]
+z_index = -10
 position = Vector2(-213, -125)
 scale = Vector2(1.79375, 1.85556)
 texture = ExtResource("4_twyb5")
-z_index = -10
 script = ExtResource("15_fondo")
 
 [node name="AnimatableBody2D" parent="." unique_id=231400854 instance=ExtResource("6_x5dvj")]
@@ -168,32 +168,31 @@ autoplay = &"RESET"
 [node name="EnemigoHongo" parent="." unique_id=1179742102 instance=ExtResource("7_15pll")]
 position = Vector2(650, -15)
 
-[node name="ControlLuz" type="CanvasLayer" parent="."]
-layer = 1
+[node name="ControlLuz" type="CanvasLayer" parent="." unique_id=2046492599]
 script = ExtResource("13_luz")
 
-[node name="MensajesAlegria" type="CanvasLayer" parent="."]
+[node name="MensajesAlegria" type="CanvasLayer" parent="." unique_id=633953940]
 script = ExtResource("12_msj")
 
-[node name="Item1" parent="." instance=ExtResource("8_star")]
-position = Vector2(-100, -80)
+[node name="Item1" parent="." unique_id=227190742 instance=ExtResource("8_star")]
+position = Vector2(-110, -28)
 
-[node name="Item2" parent="." instance=ExtResource("9_gota")]
-position = Vector2(300, -60)
+[node name="Item2" parent="." unique_id=1826452904 instance=ExtResource("9_gota")]
+position = Vector2(300, -20)
 
-[node name="Item3" parent="." instance=ExtResource("10_tierra")]
-position = Vector2(700, -50)
+[node name="Item3" parent="." unique_id=44310262 instance=ExtResource("10_tierra")]
+position = Vector2(775, -18)
 
-[node name="Item4" parent="." instance=ExtResource("8_star")]
-position = Vector2(1200, -60)
+[node name="Item4" parent="." unique_id=32084751 instance=ExtResource("8_star")]
+position = Vector2(190, -229)
 
-[node name="Item5" parent="." instance=ExtResource("9_gota")]
+[node name="Item5" parent="." unique_id=1710119166 instance=ExtResource("9_gota")]
 position = Vector2(1700, -50)
 
-[node name="CorazonFinal" parent="." instance=ExtResource("11_final")]
+[node name="CorazonFinal" parent="." unique_id=221547086 instance=ExtResource("11_final")]
 position = Vector2(2600, -80)
 
-[node name="Musica" type="AudioStreamPlayer" parent="."]
+[node name="Musica" type="AudioStreamPlayer" parent="." unique_id=1060303060]
 stream = ExtResource("14_musica")
 autoplay = true
 parameters/looping = true
