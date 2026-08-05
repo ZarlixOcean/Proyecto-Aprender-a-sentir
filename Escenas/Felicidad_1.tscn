@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://b3kiy8cd2fiuf" path="res://Escenas/Items/TierraItem.tscn" id="12_tierra"]
 [ext_resource type="PackedScene" uid="uid://bbc5dfoggf633" path="res://Escenas/Items/FinalItem.tscn" id="13_corazon"]
 [ext_resource type="PackedScene" uid="uid://kqev5unkdlwm" path="res://Escenas/CorazónItem.tscn" id="13_u1sot"]
-[ext_resource type="Script" path="res://Scripts/Ui/MensajeAlegria.gd" id="14_msj"]
+[ext_resource type="Script" uid="uid://bywqqp7h828st" path="res://Scripts/Ui/MensajeAlegria.gd" id="14_msj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2p4op"]
 texture = ExtResource("1_2v560")
@@ -209,25 +209,25 @@ autoplay = true
 parameters/looping = true
 
 [node name="StarItem" parent="." unique_id=1784064391 instance=ExtResource("10_star")]
-position = Vector2(216, -152)
-
-[node name="Gota1" parent="." unique_id=578062792 instance=ExtResource("11_gota")]
-position = Vector2(992, -47)
+position = Vector2(3060, -271)
 
 [node name="Gota2" parent="." unique_id=1826831919 instance=ExtResource("11_gota")]
-position = Vector2(738, -167)
+position = Vector2(590, -47)
 
 [node name="Tierra1" parent="." unique_id=1594250062 instance=ExtResource("12_tierra")]
-position = Vector2(1159, -134)
+position = Vector2(180, -145)
 
 [node name="Tierra2" parent="." unique_id=906582249 instance=ExtResource("12_tierra")]
-position = Vector2(1248, -152)
+position = Vector2(913, -145)
+
+[node name="Gota1" parent="." unique_id=578062792 instance=ExtResource("11_gota")]
+position = Vector2(3852, -206)
 
 [node name="CorazonFinal" parent="." unique_id=1125577203 instance=ExtResource("13_corazon")]
 position = Vector2(6091, -171)
 
 [node name="corazón" parent="." unique_id=1236339326 instance=ExtResource("13_u1sot")]
-position = Vector2(-36, -115)
+position = Vector2(2643, -127)
 
 [node name="Personaje" parent="." unique_id=596586082 instance=ExtResource("2_2v560")]
 position = Vector2(-347, 0)

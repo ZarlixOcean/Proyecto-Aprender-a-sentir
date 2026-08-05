@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxas5xolxcpx5"
-path="res://.godot/imported/Mensaje_de_alegria_1.png-4c2a135657c8919487c336b3a804f8a9.ctex"
+uid="uid://1o2oeas01s8p"
+path="res://.godot/imported/Menú.png-90609b0f4f425a2cc6b076575e6230b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Mensajes/Mensaje_de_alegria_1.png"
-dest_files=["res://.godot/imported/Mensaje_de_alegria_1.png-4c2a135657c8919487c336b3a804f8a9.ctex"]
+source_file="res://Sprites/Menú.png"
+dest_files=["res://.godot/imported/Menú.png-90609b0f4f425a2cc6b076575e6230b7.ctex"]
 
 [params]
 
