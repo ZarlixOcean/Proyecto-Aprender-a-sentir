@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://x1skoor4gj8m"]
+
+[ext_resource type="Script" uid="uid://bkt93ts28vfox" path="res://Scripts/Ui/MenuSeleccion.gd" id="1_select"]
+
+[node name="MenuSeleccion" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_select")

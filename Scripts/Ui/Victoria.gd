@@ -15,4 +15,4 @@ func _input(event):
 		if siguiente_nivel <= 2:
 			GameManager.change_level(siguiente_nivel)
 		else:
-			get_tree().change_scene_to_file("res://Escenas/Felicidad_1.tscn")
+			get_tree().change_scene_to_file("res://Escenas/Ui/MenuSeleccion.tscn")

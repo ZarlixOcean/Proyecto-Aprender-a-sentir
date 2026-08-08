@@ -34,7 +34,8 @@ func _process(_delta):
 
 	var viewport = get_viewport()
 	var canvas_transform = viewport.get_canvas_transform()
-	var player_screen = canvas_transform * player.global_position
+	var player_pos = player.global_position + Vector2(0, -45)
+	var player_screen = canvas_transform * player_pos
 	var screen_size = Vector2(viewport.size)
 	material.set_shader_parameter("player_uv", player_screen / screen_size)
 
