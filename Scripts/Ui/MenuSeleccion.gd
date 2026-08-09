@@ -2,6 +2,7 @@ extends Control
 
 const SPRITE_SIZE := Vector2(320, 180)
 const MENU_TEXTURE := preload("res://Sprites/Menú.png")
+const MUSICA_LOBBY := "res://Musica y sonidos/Musica-de-lobby.mp3"
 
 const ZONA_NIVEL_1 := Rect2(60, 135, 60, 30)
 const ZONA_NIVEL_2 := Rect2(195, 135, 60, 30)
@@ -9,11 +10,21 @@ const ZONA_NIVEL_2 := Rect2(195, 135, 60, 30)
 var fondo: TextureRect
 var boton_nivel_1: Button
 var boton_nivel_2: Button
+var musica: AudioStreamPlayer
 
 func _ready():
 	_crear_ui()
+	_crear_musica()
 	_redimensionar()
 	get_viewport().size_changed.connect(_redimensionar)
+
+func _crear_musica():
+	var stream := AudioStreamMP3.load_from_file(MUSICA_LOBBY)
+	stream.loop = true
+	musica = AudioStreamPlayer.new()
+	musica.stream = stream
+	musica.autoplay = true
+	add_child(musica)
 
 func _crear_ui():
 	fondo = TextureRect.new()
