@@ -13,8 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://bbc5dfoggf633" path="res://Escenas/Items/FinalItem.tscn" id="11_final"]
 [ext_resource type="Script" uid="uid://bywqqp7h828st" path="res://Scripts/Ui/MensajeAlegria.gd" id="12_msj"]
 [ext_resource type="Script" uid="uid://b2smwom73uakm" path="res://Scripts/Ui/ControlLuz.gd" id="13_luz"]
-[ext_resource type="AudioStream" uid="uid://dji5k7qgjvx8p" path="res://Musica y sonidos/Musica nivel alegria.mp3" id="14_musica"]
 [ext_resource type="Script" uid="uid://dgaw68eqp8njv" path="res://Scripts/FondoSigue.gd" id="15_fondo"]
+[ext_resource type="AudioStream" uid="uid://bkti5in5grgcq" path="res://Musica y sonidos/Musica nivel alegria (3).mp3" id="15_furr0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1fn6b"]
 texture = ExtResource("1_1dshx")
@@ -127,7 +127,7 @@ tile_set = SubResource("TileSet_twyb5")
 [node name="TileMapLayer2" type="TileMapLayer" parent="TileMapLayer" unique_id=2100382969]
 
 [node name="Personaje" parent="." unique_id=606200677 instance=ExtResource("2_verny")]
-position = Vector2(1446, 42)
+position = Vector2(-401, 42)
 
 [node name="Camera2D" type="Camera2D" parent="Personaje" unique_id=466676449]
 position = Vector2(0, -109)
@@ -141,7 +141,7 @@ limit_bottom = 500
 position = Vector2(-324, 223)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Zona de muerte" unique_id=100340523]
-position = Vector2(1196, -142)
+position = Vector2(1099, -181)
 shape = SubResource("RectangleShape2D_x5dvj")
 
 [node name="fondo de tristeza" type="Sprite2D" parent="." unique_id=1162755698]
@@ -193,6 +193,7 @@ position = Vector2(1700, -50)
 position = Vector2(2600, -80)
 
 [node name="Musica" type="AudioStreamPlayer" parent="." unique_id=1060303060]
-stream = ExtResource("14_musica")
+stream = ExtResource("15_furr0")
 autoplay = true
+bus = &"Musica"
 parameters/looping = true

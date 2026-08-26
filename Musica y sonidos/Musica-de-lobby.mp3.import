@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Musica-de-lobby.mp3-0fd0d40d23db46cf7b6ee56ed
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
