@@ -4,8 +4,8 @@ const SPRITE_SIZE := Vector2(320, 180)
 const MENU_TEXTURE := preload("res://Sprites/Menú.png")
 const MUSICA_LOBBY := "res://Musica y sonidos/Musica-de-lobby.mp3"
 
-const ZONA_NIVEL_1 := Rect2(60, 135, 60, 30)
-const ZONA_NIVEL_2 := Rect2(195, 135, 60, 30)
+const ZONA_NIVEL_1 := Rect2(60, 140, 90, 35)
+const ZONA_NIVEL_2 := Rect2(200, 140, 90, 35)
 
 var fondo: TextureRect
 var boton_nivel_1: Button
@@ -34,15 +34,15 @@ func _crear_ui():
 	fondo.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(fondo)
 
-	boton_nivel_1 = _crear_boton(ZONA_NIVEL_1)
+	boton_nivel_1 = _crear_boton(ZONA_NIVEL_1, "Comenzar Nivel 1: Alegría")
 	boton_nivel_1.pressed.connect(func(): GameManager.change_level(1))
 	add_child(boton_nivel_1)
 
-	boton_nivel_2 = _crear_boton(ZONA_NIVEL_2)
+	boton_nivel_2 = _crear_boton(ZONA_NIVEL_2, "Comenzar Nivel 2: Tristeza")
 	boton_nivel_2.pressed.connect(func(): GameManager.change_level(2))
 	add_child(boton_nivel_2)
 
-func _crear_boton(zona: Rect2) -> Button:
+func _crear_boton(zona: Rect2, tooltip: String) -> Button:
 	var boton := Button.new()
 	boton.flat = true
 	boton.text = ""
@@ -50,6 +50,7 @@ func _crear_boton(zona: Rect2) -> Button:
 	boton.focus_mode = Control.FOCUS_NONE
 	boton.position = zona.position
 	boton.size = zona.size
+	boton.tooltip_text = tooltip
 	return boton
 
 func _redimensionar() -> void:

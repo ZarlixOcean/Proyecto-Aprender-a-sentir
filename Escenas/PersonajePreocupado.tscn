@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dgqwamins363x"]
 
 [ext_resource type="Texture2D" uid="uid://bc8ioen2ii6jp" path="res://Sprites/Tristeza/Personaje caminando con lámpara.png" id="1_chbwn"]
+[ext_resource type="PackedScene" uid="uid://sentix_androide_001" path="res://Escenas/SentixAndroide.tscn" id="2_androide"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1669754658]
 
@@ -8,3 +9,5 @@
 texture = ExtResource("1_chbwn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1869947272]
+
+[node name="SentixAndroide" parent="." instance=ExtResource("2_androide")]

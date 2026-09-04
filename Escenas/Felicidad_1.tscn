@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bbc5dfoggf633" path="res://Escenas/Items/FinalItem.tscn" id="13_corazon"]
 [ext_resource type="PackedScene" uid="uid://kqev5unkdlwm" path="res://Escenas/CorazónItem.tscn" id="13_u1sot"]
 [ext_resource type="Script" uid="uid://bywqqp7h828st" path="res://Scripts/Ui/MensajeAlegria.gd" id="14_msj"]
+[ext_resource type="PackedScene" uid="uid://sentix_androide_001" path="res://Escenas/SentixAndroide.tscn" id="15_androide"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2p4op"]
 texture = ExtResource("1_2v560")
@@ -236,6 +237,7 @@ position = Vector2(-347, 0)
 [node name="Camera2D" type="Camera2D" parent="Personaje" unique_id=261004262]
 position = Vector2(-4589, 0)
 zoom = Vector2(2, 2)
+current = true
 limit_left = -545
 limit_top = -548
 limit_right = 6196

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://sentix_androide_001"]
+
+[ext_resource type="Script" uid="uid://bsentxandr0id1" path="res://Scripts/androide_seguidor.gd" id="1_androide"]
+[ext_resource type="Texture2D" uid="uid://1x2iew60u06b" path="res://Sprites/Sentix Androide.png" id="2_sentix"]
+
+[node name="SentixAndroide" type="CharacterBody2D"]
+z_index = 10
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_androide")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_sentix")

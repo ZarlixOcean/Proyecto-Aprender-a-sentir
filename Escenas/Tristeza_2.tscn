@@ -16,6 +16,7 @@
 [ext_resource type="Script" uid="uid://b2smwom73uakm" path="res://Scripts/Ui/ControlLuz.gd" id="13_luz"]
 [ext_resource type="Script" uid="uid://dgaw68eqp8njv" path="res://Scripts/FondoSigue.gd" id="15_fondo"]
 [ext_resource type="AudioStream" uid="uid://bkti5in5grgcq" path="res://Musica y sonidos/Musica nivel alegria (3).mp3" id="15_furr0"]
+[ext_resource type="PackedScene" uid="uid://sentix_androide_001" path="res://Escenas/SentixAndroide.tscn" id="16_androide"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1fn6b"]
 texture = ExtResource("1_1dshx")
@@ -136,6 +137,8 @@ tile_set = SubResource("TileSet_twyb5")
 position = Vector2(-347, 42)
 script = null
 
+[node name="SentixAndroide" parent="." instance=ExtResource("16_androide")]
+
 [node name="Camera2D" type="Camera2D" parent="Personaje" unique_id=466676449]
 position = Vector2(0, -109)
 zoom = Vector2(2, 2)
@@ -143,6 +146,7 @@ limit_left = -500
 limit_top = -500
 limit_right = 2916
 limit_bottom = 500
+current = true
 
 [node name="Zona de muerte" parent="." unique_id=47178290 instance=ExtResource("5_twyb5")]
 position = Vector2(-324, 223)
