@@ -16,6 +16,6 @@ func _process(delta: float) -> void:
 	if ray_cast_2_izquierda.is_colliding():
 		direccion = 1
 
-	sprite.flip_h = direccion == -1
+	sprite.flip_h = direccion == 1
 
 	position.x += direccion * speed * delta
