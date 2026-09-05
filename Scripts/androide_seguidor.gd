@@ -1,14 +1,15 @@
 extends CharacterBody2D
 
-@export var velocidad: float = 120.0
-@export var distancia_minima: float = 100.0
-@export var offset_y: float = -250.0
-@export var amplitud_bobbing: float = 6.0
-@export var frecuencia_bobbing: float = 2.0
+@export var velocidad: float = 180.0
+@export var distancia_minima: float = 40.0
+@export var offset_y: float = -60.0
+@export var offset_x: float = 30.0
+@export var amplitud_bobbing: float = 8.0
+@export var frecuencia_bobbing: float = 2.5
 
 @onready var sprite: Node2D = $Sprite2D
 
-var jugador: Node2D
+var jugador: CharacterBody2D
 var _tiempo: float = 0.0
 
 func _ready() -> void:
@@ -16,30 +17,26 @@ func _ready() -> void:
 	if jugador == null:
 		push_warning("Sentix Androide: no se encontró nodo en grupo 'Personaje'.")
 		return
-	global_position = jugador.global_position + Vector2(0, offset_y)
+	global_position = jugador.global_position + Vector2(offset_x, offset_y)
 
 func _process(delta: float) -> void:
 	_tiempo += delta
 	if jugador == null or not is_instance_valid(jugador):
 		return
 
-	var destino_x: float = jugador.global_position.x
+	var dir_jugador: float = sign(jugador.velocity.x)
+	if dir_jugador == 0.0:
+		dir_jugador = 1.0
+
+	var destino_x: float = jugador.global_position.x + offset_x * dir_jugador
 	var destino_y: float = jugador.global_position.y + offset_y
+	var destino := Vector2(destino_x, destino_y)
 
-	var diferencia := global_position - Vector2(destino_x, destino_y)
-	var distancia := diferencia.length()
+	var factor: float = 1.0 - exp(-velocidad * delta)
+	var nueva_pos: Vector2 = global_position.lerp(destino, factor)
 
-	if distancia > distancia_minima:
-		var direccion := diferencia.normalized()
-		var paso := velocidad * delta
-		if paso > distancia - distancia_minima:
-			paso = distancia - distancia_minima
-		var nuevo_x: float = global_position.x - direccion.x * paso
-		var nuevo_y: float = global_position.y - direccion.y * paso
-		var bob := sin(_tiempo * frecuencia_bobbing) * amplitud_bobbing
-		global_position = Vector2(nuevo_x, nuevo_y + bob)
-		if sprite and abs(direccion.x) > 0.01:
-			sprite.flip_h = direccion.x > 0
-	else:
-		var bob := sin(_tiempo * frecuencia_bobbing) * amplitud_bobbing
-		global_position = Vector2(destino_x, destino_y + bob)
+	var bob: float = sin(_tiempo * frecuencia_bobbing) * amplitud_bobbing
+	global_position = Vector2(nueva_pos.x, nueva_pos.y + bob)
+
+	if sprite and abs(jugador.velocity.x) > 0.01:
+		sprite.flip_h = jugador.velocity.x < 0
