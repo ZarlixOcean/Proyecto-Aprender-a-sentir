@@ -8,7 +8,7 @@ var direccion = 1
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 func _ready() -> void:
-	sprite.flip_h = false
+	sprite.flip_h = true
 
 func _process(delta: float) -> void:
 	if ray_cast_2_derecha.is_colliding():
