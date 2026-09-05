@@ -135,7 +135,6 @@ tile_set = SubResource("TileSet_twyb5")
 
 [node name="Personaje" parent="." unique_id=606200677 instance=ExtResource("2_verny")]
 position = Vector2(-347, 42)
-script = null
 
 [node name="SentixAndroide" parent="." instance=ExtResource("16_androide")]
 
