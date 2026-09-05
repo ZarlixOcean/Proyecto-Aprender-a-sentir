@@ -446,7 +446,7 @@ _data = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nffd8"]
 _data = {
-&"RESET": SubResource("Animation_nnlni"),
+&"RESET": SubResource("Animation_ecnjm"),
 &"movimiento": SubResource("Animation_nffd8_mov")
 }
 
