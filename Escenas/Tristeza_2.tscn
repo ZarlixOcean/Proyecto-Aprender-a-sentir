@@ -8,9 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/zona_de_muerte.tscn" id="5_twyb5"]
 [ext_resource type="PackedScene" uid="uid://d034k24ciktpd" path="res://Escenas/plataformas_pequeñas.tscn" id="6_x5dvj"]
 [ext_resource type="PackedScene" uid="uid://y3gy06qq8hjx" path="res://Escenas/enemigo_gusano.tscn" id="7_15pll"]
-[ext_resource type="PackedScene" uid="uid://staritem001" path="res://Escenas/Items/StarItem.tscn" id="8_star"]
-[ext_resource type="PackedScene" uid="uid://nj2rri2ahxr8" path="res://Escenas/Items/GotaItem.tscn" id="9_gota"]
-[ext_resource type="PackedScene" uid="uid://b3kiy8cd2fiuf" path="res://Escenas/Items/TierraItem.tscn" id="10_tierra"]
+[ext_resource type="PackedScene" uid="uid://bolaluzitem01" path="res://Escenas/Items/BolaLuzItem.tscn" id="8_bola"]
+[ext_resource type="PackedScene" uid="uid://bolaluzitem01" path="res://Escenas/Items/BolaLuzItem.tscn" id="9_bola"]
+[ext_resource type="PackedScene" uid="uid://bolaluzitem01" path="res://Escenas/Items/BolaLuzItem.tscn" id="10_bola"]
 [ext_resource type="PackedScene" uid="uid://bbc5dfoggf633" path="res://Escenas/Items/FinalItem.tscn" id="11_final"]
 [ext_resource type="Script" path="res://Scripts/Ui/MensajeAlegria.gd" id="12_msj"]
 [ext_resource type="Script" uid="uid://b2smwom73uakm" path="res://Scripts/Ui/ControlLuz.gd" id="13_luz"]
@@ -183,19 +183,19 @@ script = ExtResource("13_luz")
 [node name="MensajesAlegria" type="CanvasLayer" parent="." unique_id=633953940]
 script = ExtResource("12_msj")
 
-[node name="Item1" parent="." unique_id=227190742 instance=ExtResource("8_star")]
+[node name="Item1" parent="." unique_id=227190742 instance=ExtResource("8_bola")]
 position = Vector2(-110, -28)
 
-[node name="Item2" parent="." unique_id=1826452904 instance=ExtResource("9_gota")]
+[node name="Item2" parent="." unique_id=1826452904 instance=ExtResource("9_bola")]
 position = Vector2(300, -20)
 
-[node name="Item3" parent="." unique_id=44310262 instance=ExtResource("10_tierra")]
+[node name="Item3" parent="." unique_id=44310262 instance=ExtResource("10_bola")]
 position = Vector2(775, -18)
 
-[node name="Item4" parent="." unique_id=32084751 instance=ExtResource("8_star")]
+[node name="Item4" parent="." unique_id=32084751 instance=ExtResource("8_bola")]
 position = Vector2(190, -229)
 
-[node name="Item5" parent="." unique_id=1710119166 instance=ExtResource("9_gota")]
+[node name="Item5" parent="." unique_id=1710119166 instance=ExtResource("9_bola")]
 position = Vector2(1700, -50)
 
 [node name="CorazonFinal" parent="." unique_id=221547086 instance=ExtResource("11_final")]
