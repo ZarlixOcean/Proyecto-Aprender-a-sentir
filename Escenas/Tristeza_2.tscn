@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://nj2rri2ahxr8" path="res://Escenas/Items/GotaItem.tscn" id="9_gota"]
 [ext_resource type="PackedScene" uid="uid://b3kiy8cd2fiuf" path="res://Escenas/Items/TierraItem.tscn" id="10_tierra"]
 [ext_resource type="PackedScene" uid="uid://bbc5dfoggf633" path="res://Escenas/Items/FinalItem.tscn" id="11_final"]
-[ext_resource type="Script" uid="uid://bywqqp7h828st" path="res://Scripts/Ui/MensajeAlegria.gd" id="12_msj"]
+[ext_resource type="Script" path="res://Scripts/Ui/MensajeAlegria.gd" id="12_msj"]
 [ext_resource type="Script" uid="uid://b2smwom73uakm" path="res://Scripts/Ui/ControlLuz.gd" id="13_luz"]
 [ext_resource type="Script" uid="uid://dgaw68eqp8njv" path="res://Scripts/FondoSigue.gd" id="15_fondo"]
 [ext_resource type="AudioStream" uid="uid://bkti5in5grgcq" path="res://Musica y sonidos/Musica nivel alegria (3).mp3" id="15_furr0"]
@@ -27,7 +27,7 @@ texture_region_size = Vector2i(20, 20)
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x5dvj"]
 texture = ExtResource("2_1fn6b")
 texture_region_size = Vector2i(20, 20)
-5:1/0 = 0
+5:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y5ylv"]
 texture = ExtResource("3_1cdqi")
