@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 @export var velocidad: float = 220.0
-@export var offset_y: float = -40.0
-@export var offset_x: float = -25.0
+@export var offset_y: float = -50.0
+@export var offset_x: float = -35.0
 @export var amplitud_bobbing: float = 6.0
 @export var frecuencia_bobbing: float = 2.5
 
@@ -36,7 +36,7 @@ func _process(delta: float) -> void:
 	global_position = Vector2(nueva_pos.x, nueva_pos.y + bob)
 
 	if sprite and abs(jugador.velocity.x) > 0.01:
-		var dir_objetivo: float = 1.0 if jugador.velocity.x < 0 else -1.0
-		_dir_visual = move_toward(_dir_visual, dir_objetivo, delta * 6.0)
-		sprite.scale.x = abs(sprite.scale.x) * _dir_visual
+		var dir_objetivo: float = 0.8 if jugador.velocity.x < 0 else -0.8
+		_dir_visual = lerp(_dir_visual, dir_objetivo, clamp(delta * 6.0, 0.0, 1.0))
+		sprite.scale.x = _dir_visual
 
