@@ -3,21 +3,18 @@
 [ext_resource type="Texture2D" uid="uid://drnh3t3dng2al" path="res://Sprites/Tristeza/Suelo - tristeza.png" id="1_1dshx"]
 [ext_resource type="Texture2D" uid="uid://jrwkht3ajv4u" path="res://Sprites/Tristeza/Suelo.png" id="2_1fn6b"]
 [ext_resource type="PackedScene" uid="uid://c4spc2dlnuk5q" path="res://Escenas/Personaje.tscn" id="2_verny"]
-[ext_resource type="Texture2D" uid="uid://b60q6vivi6d7b" path="res://Sprites/Tristeza/Suelo - Bloque 20x20.png" id="3_1cdqi"]
+[ext_resource type="Texture2D" uid="uid://b17yutmao4x47" path="res://Sprites/Tristeza/Suelo - Bloque 20x20.png" id="3_1cdqi"]
 [ext_resource type="Texture2D" uid="uid://b5gwdxttm8tum" path="res://Sprites/Tristeza/Suelo - Bloque 20x20 (1).png" id="4_4vd83"]
 [ext_resource type="Texture2D" uid="uid://c0jdtcrm7ocp2" path="res://Sprites/Tristeza/Escenario completo.png" id="4_twyb5"]
-[ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/zona_de_muerte.tscn" id="5_twyb5"]
 [ext_resource type="PackedScene" uid="uid://d034k24ciktpd" path="res://Escenas/plataformas_pequeñas.tscn" id="6_x5dvj"]
 [ext_resource type="PackedScene" uid="uid://y3gy06qq8hjx" path="res://Escenas/enemigo_gusano.tscn" id="7_15pll"]
-[ext_resource type="PackedScene" uid="uid://bolaluzitem01" path="res://Escenas/Items/BolaLuzItem.tscn" id="8_bola"]
-[ext_resource type="PackedScene" path="res://Escenas/Items/BolaLuzItem.tscn" id="9_bola"]
-[ext_resource type="PackedScene" path="res://Escenas/Items/BolaLuzItem.tscn" id="10_bola"]
+[ext_resource type="PackedScene" uid="uid://bolalu0item01" path="res://Escenas/Items/BolaLuzItem.tscn" id="10_bola"]
 [ext_resource type="PackedScene" uid="uid://bbc5dfoggf633" path="res://Escenas/Items/FinalItem.tscn" id="11_final"]
 [ext_resource type="Script" uid="uid://bywqqp7h828st" path="res://Scripts/Ui/MensajeAlegria.gd" id="12_msj"]
 [ext_resource type="Script" uid="uid://b2smwom73uakm" path="res://Scripts/Ui/ControlLuz.gd" id="13_luz"]
 [ext_resource type="Script" uid="uid://dgaw68eqp8njv" path="res://Scripts/FondoSigue.gd" id="15_fondo"]
 [ext_resource type="AudioStream" uid="uid://bkti5in5grgcq" path="res://Musica y sonidos/Musica nivel alegria (3).mp3" id="15_furr0"]
-[ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/SentixAndroide.tscn" id="16_androide"]
+[ext_resource type="PackedScene" uid="uid://b6w8uroakkg0d" path="res://Escenas/zona_de_muerte.tscn" id="16_androide"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1fn6b"]
 texture = ExtResource("1_1dshx")
@@ -92,7 +89,8 @@ _data = {
 }
 
 [sub_resource type="Animation" id="Animation_y5ylv"]
-length = 0.001
+length = 5.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -100,10 +98,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(2204, -109)]
+"values": [Vector2(2204, -109), Vector2(2538, -71)]
 }
 
 [sub_resource type="Animation" id="Animation_4vd83"]
@@ -130,7 +128,7 @@ _data = {
 }
 
 [sub_resource type="Animation" id="Animation_uv3vu"]
-length = 0.001
+length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -138,10 +136,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(3635, -51)]
+"values": [Vector2(3635, -51), Vector2(3458, -183)]
 }
 
 [sub_resource type="Animation" id="Animation_10nyl"]
@@ -168,7 +166,8 @@ _data = {
 }
 
 [sub_resource type="Animation" id="Animation_u3q6w"]
-length = 0.001
+length = 5.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -176,10 +175,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(4000, -11)]
+"values": [Vector2(4000, -11), Vector2(4160, -105)]
 }
 
 [sub_resource type="Animation" id="Animation_6vv7d"]
@@ -206,7 +205,8 @@ _data = {
 }
 
 [sub_resource type="Animation" id="Animation_quk0p"]
-length = 0.001
+length = 5.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -214,10 +214,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(4388, -37)]
+"values": [Vector2(4388, -37), Vector2(4439, -224)]
 }
 
 [sub_resource type="Animation" id="Animation_g2xur"]
@@ -244,7 +244,8 @@ _data = {
 }
 
 [sub_resource type="Animation" id="Animation_i014v"]
-length = 0.001
+length = 7.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -252,10 +253,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(4542, -47)]
+"values": [Vector2(4542, -47), Vector2(5197.971, -179.55885)]
 }
 
 [sub_resource type="Animation" id="Animation_1osuf"]
@@ -282,7 +283,8 @@ _data = {
 }
 
 [sub_resource type="Animation" id="Animation_itfry"]
-length = 0.001
+length = 5.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -290,10 +292,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(5215, -4)]
+"values": [Vector2(5215, -4), Vector2(5225, -183)]
 }
 
 [sub_resource type="Animation" id="Animation_bjdrf"]
@@ -320,7 +322,8 @@ _data = {
 }
 
 [sub_resource type="Animation" id="Animation_1isyi"]
-length = 0.001
+length = 9.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -328,10 +331,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(5332, -173)]
+"values": [Vector2(5332, -173), Vector2(6680, -173)]
 }
 
 [sub_resource type="Animation" id="Animation_uckm2"]
@@ -357,24 +360,8 @@ _data = {
 &"new_animation": SubResource("Animation_uckm2")
 }
 
-[sub_resource type="Animation" id="Animation_ecnjm"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(6960, -28)]
-}
-
-[sub_resource type="Animation" id="Animation_3hehe"]
-resource_name = "movimiento"
-length = 6.0
+[sub_resource type="Animation" id="Animation_xkr66_reset"]
+length = 5.0
 loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -386,22 +373,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(7561, -15), Vector2(7251, 38)]
-}
-
-[sub_resource type="Animation" id="Animation_xkr66_reset"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(6960, -28)]
+"values": [Vector2(6960, -28), Vector2(7258, -28)]
 }
 
 [sub_resource type="Animation" id="Animation_xkr66_mov"]
@@ -421,6 +393,27 @@ tracks/0/keys = {
 "values": [Vector2(6960, -28), Vector2(7251, 38)]
 }
 
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xkr66"]
+_data = {
+&"RESET": SubResource("Animation_xkr66_reset"),
+&"movimiento": SubResource("Animation_xkr66_mov")
+}
+
+[sub_resource type="Animation" id="Animation_ecnjm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(7563, -22)]
+}
+
 [sub_resource type="Animation" id="Animation_nffd8_mov"]
 resource_name = "movimiento"
 length = 6.0
@@ -438,16 +431,28 @@ tracks/0/keys = {
 "values": [Vector2(7561, -15), Vector2(7251, 38)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_xkr66"]
-_data = {
-&"RESET": SubResource("Animation_xkr66_reset"),
-&"movimiento": SubResource("Animation_xkr66_mov")
+[sub_resource type="Animation" id="Animation_furr0"]
+resource_name = "new_animation"
+length = 5.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(7563, -22), Vector2(7285, 23)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nffd8"]
 _data = {
 &"RESET": SubResource("Animation_ecnjm"),
-&"movimiento": SubResource("Animation_nffd8_mov")
+&"movimiento": SubResource("Animation_nffd8_mov"),
+&"new_animation": SubResource("Animation_furr0")
 }
 
 [node name="Node2D" type="Node2D" unique_id=917491957]
@@ -475,7 +480,7 @@ limit_bottom = 500
 
 [node name="SentixAndroide" parent="." unique_id=603335306 instance=ExtResource("16_androide")]
 
-[node name="Zona de muerte" parent="." unique_id=47178290 instance=ExtResource("5_twyb5")]
+[node name="Zona de muerte" parent="." unique_id=47178290 instance=ExtResource("16_androide")]
 position = Vector2(-324, 223)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Zona de muerte" unique_id=100340523]
@@ -505,20 +510,20 @@ script = ExtResource("13_luz")
 [node name="MensajesAlegria" type="CanvasLayer" parent="." unique_id=633953940]
 script = ExtResource("12_msj")
 
-[node name="Item1" parent="." unique_id=227190742 instance=ExtResource("8_bola")]
-position = Vector2(-110, -28)
+[node name="Item1" parent="." unique_id=227190742 instance=ExtResource("10_bola")]
+position = Vector2(929, -193)
 
-[node name="Item2" parent="." unique_id=1826452904 instance=ExtResource("9_bola")]
-position = Vector2(300, -20)
+[node name="Item2" parent="." unique_id=1826452904 instance=ExtResource("10_bola")]
+position = Vector2(3186, -264)
 
 [node name="Item3" parent="." unique_id=44310262 instance=ExtResource("10_bola")]
-position = Vector2(775, -18)
+position = Vector2(4610, -211)
 
-[node name="Item4" parent="." unique_id=32084751 instance=ExtResource("8_bola")]
-position = Vector2(190, -229)
+[node name="Item4" parent="." unique_id=32084751 instance=ExtResource("10_bola")]
+position = Vector2(6651, -15)
 
-[node name="Item5" parent="." unique_id=1710119166 instance=ExtResource("9_bola")]
-position = Vector2(1700, -50)
+[node name="Item5" parent="." unique_id=1710119166 instance=ExtResource("10_bola")]
+position = Vector2(7253, -48)
 
 [node name="CorazonFinal" parent="." unique_id=221547086 instance=ExtResource("11_final")]
 position = Vector2(8199, -158)
@@ -534,7 +539,7 @@ position = Vector2(2204, -109)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D2" unique_id=133208069]
 libraries/ = SubResource("AnimationLibrary_uv3vu")
-autoplay = &"movimiento"
+autoplay = &"RESET"
 
 [node name="AnimatableBody2D3" parent="." unique_id=187544746 instance=ExtResource("6_x5dvj")]
 position = Vector2(3635, -51)
@@ -548,46 +553,46 @@ position = Vector2(4000, -11)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D4" unique_id=495405157]
 libraries/ = SubResource("AnimationLibrary_bjdrf")
-autoplay = &"new_animation"
+autoplay = &"RESET"
 
 [node name="AnimatableBody2D5" parent="." unique_id=1711564227 instance=ExtResource("6_x5dvj")]
 position = Vector2(4388, -37)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D5" unique_id=1771118921]
 libraries/ = SubResource("AnimationLibrary_1isyi")
-autoplay = &"new_animation"
+autoplay = &"RESET"
 
 [node name="AnimatableBody2D6" parent="." unique_id=615853317 instance=ExtResource("6_x5dvj")]
 position = Vector2(4542, -47)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D6" unique_id=1417059991]
 libraries/ = SubResource("AnimationLibrary_uckm2")
-autoplay = &"new_animation"
+autoplay = &"RESET"
 
 [node name="AnimatableBody2D7" parent="." unique_id=1235362739 instance=ExtResource("6_x5dvj")]
 position = Vector2(5215, -4)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D7" unique_id=166601710]
 libraries/ = SubResource("AnimationLibrary_quk0p")
-autoplay = &"new_animation"
+autoplay = &"RESET"
 
 [node name="AnimatableBody2D8" parent="." unique_id=436057894 instance=ExtResource("6_x5dvj")]
 position = Vector2(5332, -173)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D8" unique_id=2026545211]
 libraries/ = SubResource("AnimationLibrary_nnlni")
-autoplay = &"new_animation"
+autoplay = &"RESET"
 
 [node name="AnimatableBody2D9" parent="." unique_id=399380176 instance=ExtResource("6_x5dvj")]
 position = Vector2(6960, -28)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D9" unique_id=1562633620]
 libraries/ = SubResource("AnimationLibrary_xkr66")
-autoplay = &"movimiento"
+autoplay = &"RESET"
 
 [node name="AnimatableBody2D10" parent="." unique_id=709828683 instance=ExtResource("6_x5dvj")]
-position = Vector2(7251, 42)
+position = Vector2(7563, -22)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D10" unique_id=551000084]
 libraries/ = SubResource("AnimationLibrary_nffd8")
-autoplay = &"movimiento"
+autoplay = &"new_animation"

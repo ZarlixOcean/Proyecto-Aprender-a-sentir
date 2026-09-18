@@ -27,6 +27,11 @@ buses/default_bus_layout="uid://gxa7oys80ce3"
 
 GameManager="*uid://brfd20qqurayu"
 
+[display]
+
+window/size/viewport_height=658
+window/stretch/mode="canvas_items"
+
 [input]
 
 move_left={
