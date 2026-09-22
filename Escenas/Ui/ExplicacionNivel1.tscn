@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Ui/ReproducirVideo.gd" id="1_vid"]
-[ext_resource type="VideoStream" path="res://Videos/cinematica 2 de nivel alegria con musica.mp4" id="2_vid"]
+[ext_resource type="VideoStream" uid="uid://0964de827aac" path="res://Videos/cinematica 2 de nivel alegria con musica.mp4" id="2_vid"]
 
 [node name="ExplicacionNivel1" type="VideoStreamPlayer"]
 layout_mode = 3
