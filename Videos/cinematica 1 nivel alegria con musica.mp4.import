@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp4"
+type="VideoStreamMP4"
+uid="uid://cinematic1alegria"
+path="res://.godot/imported/cinematica 1 nivel alegria con musica.mp4-xxxxxxxx.ctex"
+
+[deps]
+
+source_file="res://Videos/cinematica 1 nivel alegria con musica.mp4"
+dest_files=["res://.godot/imported/cinematica 1 nivel alegria con musica.mp4-xxxxxxxx.ctex"]
+
+[params]
+
+loop=false
