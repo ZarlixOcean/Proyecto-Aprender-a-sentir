@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dnm3qj7brugld"]
+
+[ext_resource type="VideoStream" uid="uid://crr75gfcsptxp" path="res://Videos/cinematica-2-de-nivel-alegria-con-musica.ogv" id="1_08x4n"]
+
+[node name="Control" type="Control" unique_id=203330929]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1862887969]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 658.0
+stream = ExtResource("1_08x4n")
+speed_scale = 0.794
+autoplay = true
+expand = true

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d1meoauiac50h"]
+
+[ext_resource type="VideoStream" uid="uid://d2k1j50p0vhhd" path="res://Videos/cinematica-2-de-nivel-tristeza-con-musica.ogv" id="1_svhrs"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" unique_id=1452620145]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_svhrs")
+speed_scale = 0.9
+autoplay = true
+expand = true
