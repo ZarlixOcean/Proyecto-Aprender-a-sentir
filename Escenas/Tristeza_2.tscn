@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://d034k24ciktpd" path="res://Escenas/plataformas_pequeñas.tscn" id="6_x5dvj"]
 [ext_resource type="PackedScene" uid="uid://y3gy06qq8hjx" path="res://Escenas/enemigo_gusano.tscn" id="7_15pll"]
 [ext_resource type="PackedScene" uid="uid://bolalu0item01" path="res://Escenas/Items/BolaLuzItem.tscn" id="10_bola"]
-[ext_resource type="PackedScene" uid="uid://bbc5dfoggf633" path="res://Escenas/Items/FinalItem.tscn" id="11_final"]
+[ext_resource type="PackedScene" uid="uid://cfintrist0item" path="res://Escenas/Items/FinalItemTristeza.tscn" id="11_final"]
 [ext_resource type="Script" uid="uid://bywqqp7h828st" path="res://Scripts/Ui/MensajeAlegria.gd" id="12_msj"]
 [ext_resource type="Script" uid="uid://b2smwom73uakm" path="res://Scripts/Ui/ControlLuz.gd" id="13_luz"]
 [ext_resource type="Script" uid="uid://dgaw68eqp8njv" path="res://Scripts/FondoSigue.gd" id="15_fondo"]
