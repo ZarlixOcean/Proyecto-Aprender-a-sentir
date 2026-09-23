@@ -12,6 +12,8 @@ var boton_nivel_1: Button
 var boton_nivel_2: Button
 var musica: AudioStreamPlayer
 
+
+
 func _ready():
 	_crear_ui()
 	_crear_musica()

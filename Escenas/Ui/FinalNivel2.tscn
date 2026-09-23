@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dmsxue13fphln"]
+
+[ext_resource type="VideoStream" uid="uid://bvvrh5n4f5x76" path="res://Videos/cinematica-final-del-nivel-tristeza-con-musica.ogv" id="1_phrs4"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" unique_id=1354094404]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_phrs4")
+speed_scale = 0.9
+autoplay = true
+expand = true

@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene format=3 uid="uid://b16rvd6u15114"]
 
-[ext_resource type="Script" path="res://Scripts/Ui/ReproducirVideo.gd" id="1_vid"]
-[ext_resource type="VideoStream" path="res://Videos/explicacion_nivel1.ogv" id="2_vid"]
+[ext_resource type="VideoStream" uid="uid://crr75gfcsptxp" path="res://Videos/cinematica-2-de-nivel-alegria-con-musica.ogv" id="1_kciyx"]
+[ext_resource type="Script" uid="uid://uww8acbqocc3" path="res://Scripts/Ui/ReproducirVideo.gd" id="1_vid"]
 
-[node name="ExplicacionNivel1" type="VideoStreamPlayer"]
-layout_mode = 3
+[node name="ExplicacionNivel1" type="VideoStreamPlayer" unique_id=1142283104]
 anchors_preset = 15
-script = ExtResource("1_vid")
-siguiente_escena = "res://Escenas/Felicidad_1.tscn"
-stream = ExtResource("2_vid")
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_kciyx")
+speed_scale = 0.9
 autoplay = true
 expand = true
+script = ExtResource("1_vid")

@@ -1,10 +1,10 @@
 extends Control
 
 func _ready():
-    pass
+	pass
 
 func _on_start_pressed():
-    GameManager.change_level(1)
+	GameManager.change_level(1)
 
 func _on_quit_pressed():
-    get_tree().quit()
+	get_tree().quit()

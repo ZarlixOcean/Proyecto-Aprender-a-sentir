@@ -1,6 +1,6 @@
 extends VideoStreamPlayer
 
-@export var siguiente_escena: String = "res://Escenas/Felicidad_1.tscn"
+@export var siguiente_escena: String = "res://Escenas/Tristeza_2.tscn"
 
 func _ready():
 	finished.connect(_on_video_finished)
