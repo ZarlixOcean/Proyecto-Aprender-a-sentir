@@ -14,3 +14,4 @@ speed_scale = 0.9
 autoplay = true
 expand = true
 script = ExtResource("2_2gwyo")
+siguiente_escena = "res://Escenas/Ui/ExplicacionNivel2.tscn"

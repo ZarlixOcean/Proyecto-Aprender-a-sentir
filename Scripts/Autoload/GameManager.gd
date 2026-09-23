@@ -34,7 +34,10 @@ func collect_final_item():
 	final_item_collected.emit()
 	print("¡Corazón recolectado! Nivel completado.")
 	await get_tree().create_timer(0.5).timeout
-	get_tree().change_scene_to_file("res://Escenas/Ui/FinalNivel1.tscn")
+	if current_level == 2:
+		get_tree().change_scene_to_file("res://Escenas/Ui/FinalNivel2.tscn")
+	else:
+		get_tree().change_scene_to_file("res://Escenas/Ui/FinalNivel1.tscn")
 
 func change_level(level: int):
 	current_level = level
@@ -46,6 +49,6 @@ func _get_level_scene(level: int) -> String:
 		1:
 			return "res://Escenas/Ui/IntroNivel1.tscn"
 		2:
-			return "res://Escenas/Tristeza_2.tscn"
+			return "res://Escenas/Ui/IntroNivel2.tscn"
 		_:
 			return "res://Escenas/Ui/Victoria.tscn"
